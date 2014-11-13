@@ -1,1 +1,12 @@
 @import url("reset.css");
+
+html::before {
+	content: ' ';
+	height: 40px;
+	background-color: rgba(0, 0, 0, .65);
+	display: block;
+	border-bottom: 2px solid #ff9e5d;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
