@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="<?php echo $t_uri ?>/css/phone.css" media="only screen and (min-width: 320px) and (max-width: 767px)">
 	<link rel="stylesheet" href="<?php echo $t_uri ?>/css/tablet.css" media="only screen and (min-width: 768px) and (max-width: 959px)">
 	<link rel="stylesheet" href="<?php echo $t_uri ?>/css/desktop.css" media="only screen and (min-width: 960px)">
+	<link href='http://fonts.googleapis.com/css?family=Economica:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 
