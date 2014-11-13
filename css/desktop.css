@@ -10,3 +10,8 @@ html::before {
 	width: 100%;
 	z-index: 1;
 }
+
+html {
+font-family: 'Economica', sans-serif;	
+
+}
