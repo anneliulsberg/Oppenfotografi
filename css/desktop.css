@@ -34,3 +34,11 @@ header a {
 header a:hover {
 	color: #a1d83b;
 }
+
+nav {
+	width: 960px;
+	margin: 0 auto;
+	text-align: right;
+	position: relative;
+	z-index: 2;
+}
