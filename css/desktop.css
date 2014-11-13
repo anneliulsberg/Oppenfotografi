@@ -15,3 +15,22 @@ html {
 font-family: 'Economica', sans-serif;	
 
 }
+
+header {
+	width: 960px;
+	margin: 0 auto;
+	padding: 5px ;
+	font-size: 24px;
+	color: #fff;
+	z-index: 2;
+	position: relative;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: #a1d83b;
+}
