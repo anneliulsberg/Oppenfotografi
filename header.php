@@ -26,32 +26,5 @@
 			</ul>
 		</nav>
 	</div>
-	
-	<ul id="background">
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-		<li><a href="#"></a><img src="" alt=""></li>
-	</ul>
-	
+		
 	
