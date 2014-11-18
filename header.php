@@ -16,14 +16,16 @@
 	
 	<header><a href="/">Oppen fotografi</a></header>
 	
-	<nav>
-		<ul>
-			<li><a href="#">Kontakt</a></li>
-			<li><a href="#">Pris</a></li>
-			<li><a href="#">Portefølje</a></li>
-			<li><a href="#">Blogg</a></li>			
-		</ul>
-	</nav>
+	<div id="content">	
+		<nav>
+			<ul>
+				<li id="contact"><a href="#">Kontakt</a></li>
+				<li id="price"><a href="#">Pris</a></li>
+				<li id="portfolio"><a href="#">Portefølje</a></li>
+				<li id="blog"><a href="#">Blogg</a></li>			
+			</ul>
+		</nav>
+	</div>
 	
 	<ul id="background">
 		<li><a href="#"></a><img src="" alt=""></li>
