@@ -8,7 +8,7 @@ html::before {
 	border-bottom: 2px solid #ff9e5d;
 	position: absolute;
 	width: 100%;
-	z-index: 1;
+	z-index: 2;
 }
 
 html {
@@ -22,7 +22,7 @@ header {
 	padding: 5px ;
 	font-size: 24px;
 	color: #fff;
-	z-index: 2;
+	z-index: 3;
 	position: relative;
 }
 
@@ -35,10 +35,65 @@ header a:hover {
 	color: #a1d83b;
 }
 
-nav {
-	width: 960px;
+#content {
+	width: 1200px;
 	margin: 0 auto;
-	text-align: right;
 	position: relative;
-	z-index: 2;
 }
+
+nav {
+	width: 360px;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 1;
+	top: -34px;
+	right: 120px;
+}
+
+nav ul li a {
+	float: left;
+	text-align: center;
+	width: 90px;
+	height: 85px;
+	padding-top: 80px;
+	font-size: 24px;
+	color: #484848;
+	text-decoration: none;
+}
+
+nav #contact a {
+	background-color: #e0e0e0;
+}
+
+nav #price a {
+	background-color: #f4f4f4;
+}
+
+nav #portfolio a {
+	background-color: #a9a8a7;
+}
+
+nav #blog a {
+	background-color: #dddcdc;
+}
+
+nav ul li a:hover {
+	color: #fff;
+}
+
+nav #contact a:hover {
+	background-color: #a1d83b;
+}
+
+nav #price a:hover {
+	background-color: #c8ea85;
+}
+
+nav #portfolio a:hover {
+	background-color: #2f2f2f;
+}
+
+nav #blog a:hover {
+	background-color: #76b600;
+}
+
