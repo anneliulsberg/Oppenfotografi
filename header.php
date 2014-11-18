@@ -25,6 +25,5 @@
 				<li id="blog"><a href="#">Blogg</a></li>			
 			</ul>
 		</nav>
-	</div>
 		
 	
