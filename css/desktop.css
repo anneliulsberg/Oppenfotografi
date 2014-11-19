@@ -103,6 +103,12 @@ nav #blog a:hover {
 	right: 0;
 }
 
+#slideshow li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 30px;	
+}
+
 #slideshow li:nth-child(1) a {
 	width: 745px;
 	height: 745px;
@@ -162,6 +168,57 @@ nav #blog a:hover {
 	top: 560px;
 	right: 855px;	
 }
+
+#slideshow li a span {
+	display: none;
+	height: 50px;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 15px;
+}
+
+#slideshow li a:hover span {
+	display: block;
+	
+}
+
+#slideshow li:nth-child(1) a span {
+	background-color: #ffe827;
+	margin-top: 630px;
+	
+}
+
+#slideshow li:nth-child(2) a span {
+	background-color: #88e169;
+	margin-top: 350px;
+}
+
+#slideshow li:nth-child(3) a span {
+	background-color: #44dedc;
+	margin-top: 170px;
+}
+
+#slideshow li:nth-child(4) a span {
+	background-color: #75adf2;
+	margin-top: 50px;
+
+}
+
+#slideshow li:nth-child(5) a span {
+	background-color: #ff9e5d;
+	margin-top: 35px;
+}
+
+#slideshow li:nth-child(6) a span {
+	background-color: #b088ec;
+	margin-top: 35px;
+}
+
+
+
+
+
+
 
 
 
