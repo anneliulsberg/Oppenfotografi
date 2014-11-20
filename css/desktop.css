@@ -231,8 +231,9 @@ footer a {
 	color: #fff;
 }
 
-
-
+footer a:hover {
+	color: #a1d83b;
+}
 
 
 
