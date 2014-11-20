@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="<?php echo $t_uri ?>/css/desktop.css" media="only screen and (min-width: 960px)">
 	<link href='http://fonts.googleapis.com/css?family=Economica:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="<?php echo $t_uri ?>/js/jquery.bgswitcher.js" type="text/javascript"></script>
+	<script type="text/javascript">var baseUri = '<?php echo $t_uri ?>';</script>
 	<script src="<?php echo $t_uri ?>/js/main.js" type="text/javascript"></script>
 	<?php wp_head(); ?>
 </head>
