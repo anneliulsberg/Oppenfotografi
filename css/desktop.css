@@ -61,39 +61,44 @@ nav ul li a {
 	text-decoration: none;
 }
 
-nav #contact a {
+nav #kontakt a {
 	background-color: #e0e0e0;
 }
 
-nav #price a {
+nav #pris a {
 	background-color: #f4f4f4;
 }
 
-nav #portfolio a {
+nav #portefolje a {
 	background-color: #a9a8a7;
 }
 
-nav #blog a {
+nav #blogg a {
 	background-color: #dddcdc;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li.active a {
 	color: #fff;
 }
 
-nav #contact a:hover {
+nav #kontakt a:hover, 
+nav #kontakt.active a {
 	background-color: #a1d83b;
 }
 
-nav #price a:hover {
+nav #pris a:hover, 
+nav #pris.active a {
 	background-color: #c8ea85;
 }
 
-nav #portfolio a:hover {
+nav #portefolje a:hover,
+nav #portefolje.active a {
 	background-color: #2f2f2f;
 }
 
-nav #blog a:hover {
+nav #blogg a:hover,
+nav #blogg.active a {
 	background-color: #76b600;
 }
 
