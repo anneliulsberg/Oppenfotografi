@@ -20,14 +20,13 @@
 	
 	<header><a href="/">Oppen fotografi</a></header>
 	
-	<div id="content">	
-		<nav>
-			<ul>
-				<li id="contact"><a href="/kontakt">Kontakt</a></li>
-				<li id="price"><a href="#">Pris</a></li>
-				<li id="portfolio"><a href="#">Portefølje</a></li>
-				<li id="blog"><a href="#">Blogg</a></li>			
-			</ul>
-		</nav>
-		
-	
+		<div class="wrapper">
+			<nav>
+				<ul>
+					<li id="contact"><a href="/kontakt">Kontakt</a></li>
+					<li id="price"><a href="#">Pris</a></li>
+					<li id="portfolio"><a href="#">Portefølje</a></li>
+					<li id="blog"><a href="#">Blogg</a></li>			
+				</ul>
+			</nav>
+		</div>

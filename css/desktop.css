@@ -35,7 +35,7 @@ header a:hover {
 	color: #a1d83b;
 }
 
-#content {
+.wrapper {
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
