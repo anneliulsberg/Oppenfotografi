@@ -102,6 +102,15 @@ nav #blogg.active a {
 	background-color: #76b600;
 }
 
+#portfolio-menu {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#portfolio-menu li {
+	display: inline-block;
+}
+
 #slideshow {
 	position: absolute;
 	top: 104;
