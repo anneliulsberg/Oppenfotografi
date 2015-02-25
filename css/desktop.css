@@ -226,13 +226,26 @@ nav #blogg.active a {
 article {
 	width: 1200px;
 	margin: 0 auto;
-	padding: 60px 0;
 	color: #fff;
 	font-size: 16px;
+	line-height: 1.2;
 }
 
 article h1 {
 	font-size: 30px;
+}
+
+article p {
+	margin-bottom: 1em;
+}
+
+article a {
+	color: #fff;
+	text-decoration: none;
+}
+
+article a:hover {
+	color: rgba(0, 0, 0, .65);
 }
 
 footer {
