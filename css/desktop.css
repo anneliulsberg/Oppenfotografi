@@ -12,8 +12,13 @@ html::before {
 }
 
 html {
-font-family: 'Economica', sans-serif;	
+	font-family: 'Economica', sans-serif;
+	position: relative;
+	min-height: 100%;	
+}
 
+body {
+	margin: 0 0 40px 0;
 }
 
 header {
@@ -112,9 +117,10 @@ nav #blogg.active a {
 }
 
 #slideshow {
-	position: absolute;
+	position: relative;
 	top: 104;
 	right: 0;
+	height: 945px;
 }
 
 #slideshow li a {
@@ -142,6 +148,7 @@ nav #blogg.active a {
 	top: 100px;
 	right: 0;
 }
+
 
 #slideshow li:nth-child(2) a {
 	width: 460px;
