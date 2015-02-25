@@ -16,7 +16,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 	
 	<header><a href="/">Oppen fotografi</a></header>
 	
