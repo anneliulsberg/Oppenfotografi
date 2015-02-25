@@ -230,7 +230,24 @@ nav #blogg.active a {
 #page {
 	background-color: #a1d83b;
 	margin-top: 107px;
+	padding: 60px 0;
 }
+
+body.kontakt #page {
+	background-color: #a1d83b;
+}
+
+body.pris #page {
+	background-color: #c8ea85;
+}
+
+body.portefolje #page {
+	background-color: #2f2f2f;	
+}
+
+body.blogg #page {
+	background-color: #76b600;
+} 
 
 article {
 	width: 1200px;
