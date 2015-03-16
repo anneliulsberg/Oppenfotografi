@@ -7,11 +7,18 @@
 	
 	<ul id="portfolio-menu">
 		<?php 
-				$category_id = get_query_var('cat');
-				$category = get_category($category_id);
+				$current_category_id = get_query_var('cat');
+				$current_category = get_category($category_id);
+				$categories = get_categories(array(
+					'parent' => $current_category_id,
+					'hide_empty' => 0,
+					'orderby' => 'name',
+				));
 				
-				if ($category && $category->slug != 'blogg') {
-		 			wp_list_categories('&title_li=&show_count=1&child_of='.$category_id.'&hide_empty=0&depth=1');
+				if ($current_category && $current_category->slug != 'blogg') {
+					foreach ($categories as $category) {
+						echo '<li class="' . $category->slug . '"><a href="' . get_category_link($category->term_id) . '"><span>' . $category->name . '</span></a></li>';
+					}
 		 		}
 		  ?>
 	</ul>

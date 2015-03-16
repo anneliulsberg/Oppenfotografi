@@ -116,6 +116,127 @@ nav #blogg.active a {
 	display: inline-block;
 }
 
+#portfolio-menu li a {
+	text-decoration: none;
+	color: #484848;
+	font-size: 24px;
+	display: block;
+	text-align: center;
+	padding-top: 130px;
+	width: 200px;
+	height: 70px;
+}
+
+#portfolio-menu li a span {
+	content: '';
+	display: block;
+	height: 20px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+#portfolio-menu li a:hover span {
+	color: #fff;
+}
+
+
+#portfolio-menu .akt a {
+	background-image: url(../images/akt.png);
+}
+
+#portfolio-menu .kunstfotografi a {
+	background-image: url(../images/artphoto.png);
+}
+
+#portfolio-menu .bedrift a {
+	background-image: url(../images/bedrift.png);
+}
+
+#portfolio-menu .mote a {
+	background-image: url(../images/fashion.png);
+}
+
+#portfolio-menu .modellportefolje a {
+	background-image: url(../images/modellportefolje.png);
+}
+
+#portfolio-menu .portrett a {
+	background-image: url(../images/portrett.png);
+}
+
+#portfolio-menu .akt a span {
+	background-color: #d9d9d9;
+}
+
+#portfolio-menu .kunstfotografi a span {
+	background-color: #f2f2f2;
+}
+
+#portfolio-menu .bedrift a span {
+	background-color: #f8f8f8;
+}
+
+#portfolio-menu .mote a span {
+	background-color: #c7c6c6;
+}
+
+#portfolio-menu .modellportefolje a span {
+	background-color: #b4b4b4;
+}
+
+#portfolio-menu .portrett a span {
+	background-color: #e3e2e2;
+}
+
+#portfolio-menu .akt a:hover {
+	background-image: url(../images/akt-h.png);
+}
+
+#portfolio-menu .kunstfotografi a:hover {
+	background-image: url(../images/artphoto-h.png);
+}
+
+#portfolio-menu .bedrift a:hover {
+	background-image: url(../images/bedrift-h.png);
+}
+
+#portfolio-menu .mote a:hover {
+	background-image: url(../images/fashion-h.png);
+}
+
+#portfolio-menu .modellportefolje a:hover {
+	background-image: url(../images/modellportefolje-h.png);
+}
+
+#portfolio-menu .portrett a:hover {
+	background-image: url(../images/portrett-h.png);
+}
+
+#portfolio-menu .akt a:hover span {
+	background-color: #b088ec;
+}
+
+#portfolio-menu .kunstfotografi a:hover span {
+	background-color: #ffe827;
+}
+
+#portfolio-menu .bedrift a:hover span {
+	background-color: #ff9e5d;
+}
+
+#portfolio-menu .mote a:hover span {
+	background-color: #75adf2;
+}
+
+#portfolio-menu .modellportefolje a:hover span {
+	background-color: #ff4d4d;
+}
+
+#portfolio-menu .portrett a:hover span {
+	background-color: #fe97ff;
+}
+
+
 #slideshow {
 	position: relative;
 	top: 104;
