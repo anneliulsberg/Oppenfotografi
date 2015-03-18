@@ -236,6 +236,34 @@ nav #blogg.active a {
 	background-color: #fe97ff;
 }
 
+body.modellportefolje article {
+	margin-right: 20px;
+	width: 150px;
+	height: 150px;
+	background-color: #7d7d7d;
+	display: inline-block;
+}
+
+body.modellportefolje article a {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	color: #484848;
+	text-align: center;
+}
+
+body.modellportefolje article a span {
+	margin-top: 85px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #b4b4b4;
+	display: block;
+}
+
+body.modellportefolje article a:hover span {
+	background-color: #ff4d4d;
+	color: #fff;
+}
 
 #slideshow {
 	position: relative;
