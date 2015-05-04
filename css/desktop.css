@@ -168,6 +168,10 @@ nav #blogg.active a {
 	background-image: url(../images/redaksjonelt-p.png);
 }
 
+#portfolio-menu .studio a {
+	background-image: url(../images/studioportrett.png);
+}
+
 #portfolio-menu .akt a span {
 	background-color: #d9d9d9;
 }
@@ -194,6 +198,10 @@ nav #blogg.active a {
 
 #portfolio-menu .redaksjonelt a span {
 	background-color: #d2d2d2;
+}
+
+#portfolio-menu .studio a span {
+	background-color: #c0c0c0;
 }
 
 #portfolio-menu .akt a:hover {
@@ -224,6 +232,10 @@ nav #blogg.active a {
 	background-image: url(../images/redaksjonelt-p-h.png);
 }
 
+#portfolio-menu .studio a:hover {
+	background-image: url(../images/studioportrett-h.png);
+}
+
 #portfolio-menu .akt a:hover span {
 	background-color: #b088ec;
 }
@@ -251,6 +263,11 @@ nav #blogg.active a {
 #portfolio-menu .redaksjonelt a:hover span {
 	background-color: #e65dff;
 }
+
+#portfolio-menu .studio a:hover span {
+	background-color: #875dff;
+}
+
 
 body.modellportefolje article {
 	margin-right: 20px;
