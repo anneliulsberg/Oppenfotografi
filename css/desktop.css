@@ -393,6 +393,15 @@ body.kontakt #page {
 	background-color: #a1d83b;
 }
 
+body.kontakt #page article p:first-of-type {
+	float: right;
+	margin-left: 1em;
+}
+
+body.kontakt #page br.clear {
+	clear: right;
+}
+
 body.pris #page {
 	background-color: #c8ea85;
 }
