@@ -36,8 +36,15 @@ function oppen_nav_menu_item_id($menu_id, $item, $args, $depth) {
 function oppen_body_class($classes) {
 	if (is_category()) {
 		$category_id = get_query_var('cat');
-		$category = get_category($category_id);
-		return array($category->slug);
+		$category_slugs = array();
+
+		while ($category_id != 0) {
+			$category = get_category($category_id);
+			array_push($category_slugs, $category->slug);
+			$category_id = $category->category_parent;			
+		}
+
+		return $category_slugs;
 	}	else if (is_page()) {
 		$post = get_post($item->object_id);
 		return array($post->post_name);
