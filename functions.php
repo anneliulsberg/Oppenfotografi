@@ -46,6 +46,31 @@ function oppen_body_class($classes) {
 	return $classes;
 }
 
+function oppen_get_first_attached_image_src($size) {
+	global $post;
+
+	$images = get_attached_media('image');
+
+	if ($images && is_array($images) && count($images) > 0) {
+		reset($images);
+		$first_id = key($images);
+		
+		// $image_data = array(
+		//   [0] => url
+		// 	 [1] => width
+		//   [2] => height
+		//   [3] => boolean: true if $url is a resized image, false if it is the original or if no image is available.
+		// )
+		$image_data = wp_get_attachment_image_src($first_id, array(150, 150));
+
+		if ($image_data && is_array($image_data) && count($image_data) > 0) {
+			return $image_data[0];
+		}
+	}
+
+	return false;
+}
+
 add_filter('body_class', 'oppen_body_class', 10, 2);
 add_filter('nav_menu_item_id', 'oppen_nav_menu_item_id', 10, 2);
 add_filter('nav_menu_css_class' , 'oppen_nav_menu_item_css_class', 10, 2);
