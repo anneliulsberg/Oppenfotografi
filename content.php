@@ -10,7 +10,7 @@ $image_src = oppen_get_first_attached_image_src($size);
 		</div>
 		<?php if ($image_src) : ?>
 			<div class="picture">
-				<img src="<?php echo $image_src ?>" width="<?php echo $size[0] ?>" height="<?php echo $size[1] ?>" alt="">
+				<img src="<?php echo $image_src ?>" alt="">
 			</div>
 		<?php endif; ?>
 		<?php
