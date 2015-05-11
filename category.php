@@ -1,15 +1,16 @@
 <?php
 get_header();
-query_posts($query_string . "&orderby=title&order=asc");
 $current_category_id = get_query_var('cat');
 $current_category = get_category($current_category_id);
 $is_category_blog = $current_category && $current_category->slug == 'blogg';
-$orderby = $is_category_blog ? 'date' : 'name';
+$orderby = $is_category_blog ? '&orderby=date&order=desc' : '&orderby=title&order=asc';
+query_posts($query_string . $orderby);
 $categories = get_categories(array(
 	'parent' => $current_category_id,
 	'hide_empty' => 0,
-	'orderby' => $orderby,
+	'orderby' => 'name',
 ));
+
 ?>
 
 <section class="category">
