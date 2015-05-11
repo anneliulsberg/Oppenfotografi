@@ -78,9 +78,14 @@ function oppen_get_first_attached_image_src($size) {
 	return false;
 }
 
+function oppenfotografi_excerpt_length($length) {
+	return 10;
+}
+
 add_filter('body_class', 'oppen_body_class', 10, 2);
 add_filter('nav_menu_item_id', 'oppen_nav_menu_item_id', 10, 2);
 add_filter('nav_menu_css_class' , 'oppen_nav_menu_item_css_class', 10, 2);
 add_action('after_setup_theme', 'oppenfotografi_setup');
+add_filter('excerpt_length', 'oppenfotografi_excerpt_length', 999);
 
 ?>
