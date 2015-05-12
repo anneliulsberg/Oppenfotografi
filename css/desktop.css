@@ -113,7 +113,7 @@ nav #blogg.active a {
 }
 
 #portfolio-menu li {
-	display: inline-block;
+	float: left;
 }
 
 #portfolio-menu li a {
