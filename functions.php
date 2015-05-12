@@ -78,7 +78,7 @@ function oppen_get_first_attached_image_src($size) {
 	return false;
 }
 
-function oppenfotografi_excerpt_length($length) {
+function oppen_excerpt_length($length) {
 	return 10;
 }
 
