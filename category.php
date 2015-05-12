@@ -46,7 +46,7 @@ $top_level_categories = get_categories(array(
 					if ($is_category_blog) :		
 							get_template_part('content');
 					elseif ($is_sub_category) :
-						$image_src = oppen_get_first_attached_image_src(array(150, 150)); ?>
+						$image_src = oppen_get_first_attached_image_src(array(386, 386)); ?>
 						<article>
 							<a href="<?php echo get_permalink(); ?>" <?php echo $image_src ? "style='background-image: url($image_src)'" : '' ?>>
 								<span><?php the_title(); ?></span>
