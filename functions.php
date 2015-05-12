@@ -34,13 +34,11 @@ function oppen_nav_menu_item_id($menu_id, $item, $args, $depth) {
 
 function oppen_body_class($classes) {
 	if (is_category()) {
-		$category_id = get_query_var('cat');
 		$category_slugs = array();
+		$categories = oppen_get_current_categories();
 
-		while ($category_id != 0) {
-			$category = get_category($category_id);
+		foreach ($categories as $category) {
 			array_push($category_slugs, $category->slug);
-			$category_id = $category->category_parent;			
 		}
 
 		return $category_slugs;
