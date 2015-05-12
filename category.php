@@ -19,15 +19,23 @@ $top_level_categories = get_categories(array(
 <section class="category">
 	<div id="page">
 		<div class="wrapper">
-			<ul id="portfolio-menu">
-				<?php 
-					if (!$is_category_blog) :
-						foreach ($top_level_categories as $category) :
-							echo '<li class="' . esc_attr($category->slug) . '"><a href="' . get_category_link($category->term_id) . '"><span>' . $category->name . '</span></a></li>';
-						endforeach;
-			 		endif;
-				?>
-			</ul>
+			<?php if (!$is_category_blog) : ?>
+				<ul id="portfolio-menu">
+					<?php foreach ($top_level_categories as $category) :
+						$slug = esc_attr($category->slug);
+						$link = get_category_link($category->term_id);
+						$name = $category->name;
+						$is_active = array_reduce($current_categories, function($carry, $item) {
+							global $category;
+							return $carry || $item->cat_ID == $category->cat_ID;
+						});
+						$active_class = $is_active ? ' active' : ''; ?>
+
+						<li class="<?php echo $slug . $active_class ?>"><a href="<?php echo $link ?>"><span><?php echo $name ?></span></a></li>
+
+					<?php endforeach; ?>
+				</ul>
+			<?php endif; ?>
 			
 			<?php 
 			
