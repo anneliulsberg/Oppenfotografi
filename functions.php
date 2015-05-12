@@ -81,6 +81,24 @@ function oppen_excerpt_length($length) {
 	return 10;
 }
 
+function oppen_get_current_categories() {
+	$category_id = get_query_var('cat');
+	$categories = array();
+
+	while ($category_id != 0) {
+		$category = get_category($category_id);
+	
+		if (!isset($category) || !is_object($category)) {
+			break;
+		}
+
+		$categories[] = $category;
+		$category_id = $category->category_parent;
+	}
+
+	return $categories;
+}
+
 add_filter('body_class', 'oppen_body_class', 10, 2);
 add_filter('nav_menu_item_id', 'oppen_nav_menu_item_id', 10, 2);
 add_filter('nav_menu_css_class' , 'oppen_nav_menu_item_css_class', 10, 2);
