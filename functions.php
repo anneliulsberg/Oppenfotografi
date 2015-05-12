@@ -75,9 +75,10 @@ function oppen_get_first_attached_image_src($size) {
 		//   [2] => height
 		//   [3] => boolean: true if $url is a resized image, false if it is the original or if no image is available.
 		// )
-		$image_data = wp_get_attachment_image_src($first_id, array(150, 150));
+		$image_data = wp_get_attachment_image_src($first_id, $size);
 
 		if ($image_data && is_array($image_data) && count($image_data) > 0) {
+			// var_dump($image_data);
 			return $image_data[0];
 		}
 	}
