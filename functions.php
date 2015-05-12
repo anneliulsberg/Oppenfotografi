@@ -26,7 +26,6 @@ function oppen_nav_menu_item_id($menu_id, $item, $args, $depth) {
 			case "category":
 				$category = get_category($item->object_id);
 				return $category->slug;
-				break;
 		}
 	}
 	
