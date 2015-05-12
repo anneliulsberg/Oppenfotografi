@@ -135,7 +135,8 @@ nav #blogg.active a {
 	padding-bottom: 15px;
 }
 
-#portfolio-menu li a:hover span {
+#portfolio-menu li a:hover span,
+#portfolio-menu li.active a span {
 	color: #fff;
 }
 
@@ -220,7 +221,8 @@ nav #blogg.active a {
 	background-image: url(../images/fashion-h.png);
 }
 
-#portfolio-menu .modellportefolje a:hover {
+#portfolio-menu .modellportefolje a:hover,
+#portfolio-menu .modellportefolje.active a {
 	background-image: url(../images/modellportefolje-h.png);
 }
 
@@ -252,7 +254,8 @@ nav #blogg.active a {
 	background-color: #75adf2;
 }
 
-#portfolio-menu .modellportefolje a:hover span {
+#portfolio-menu .modellportefolje a:hover span,
+#portfolio-menu .modellportefolje.active a span {
 	background-color: #ff4d4d;
 }
 
