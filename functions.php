@@ -13,6 +13,16 @@ function oppen_nav_menu_item_css_class($classes, $item) {
 	if (in_array('current-menu-item', $classes) ){
 		return array('active');
 	}
+
+	if ($item->object == "category" && is_category()) {
+		$categories = oppen_get_current_categories();
+
+		foreach ($categories as $category) {
+			if ($category->cat_ID == $item->object_id) {
+				return array('active');
+			}
+		}
+	}
 	
 	return array();
 }
