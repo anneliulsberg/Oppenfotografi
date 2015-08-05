@@ -3,10 +3,13 @@
 error_reporting(E_ERROR | E_PARSE);
 ini_set('display_errors', 'On');
 
-function oppenfotografi_setup() {
+function oppen_setup() {
     register_nav_menus(array(
         'primary' => 'Hovedmeny'
     ));
+
+    add_theme_support('post-thumbnails');
+    set_post_thumbnail_size(386, 386, array('center', 'top'));
 }
 
 function oppen_nav_menu_item_css_class($classes, $item) {
@@ -108,10 +111,9 @@ function oppen_get_current_categories() {
     return $categories;
 }
 
+add_action('after_setup_theme', 'oppen_setup');
 add_filter('body_class', 'oppen_body_class', 10, 2);
 add_filter('nav_menu_item_id', 'oppen_nav_menu_item_id', 10, 2);
 add_filter('nav_menu_css_class' , 'oppen_nav_menu_item_css_class', 10, 2);
-add_action('after_setup_theme', 'oppenfotografi_setup');
 add_filter('excerpt_length', 'oppenfotografi_excerpt_length', 999);
-
 ?>
