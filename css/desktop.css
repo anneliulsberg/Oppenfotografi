@@ -122,9 +122,9 @@ nav #blogg.active a {
 	font-size: 24px;
 	display: block;
 	text-align: center;
-	padding-top: 130px;
-	width: 200px;
-	height: 70px;
+	padding-top: 110px;
+	width: 171px;
+	height: 61px;
 }
 
 #portfolio-menu li a span {
@@ -152,6 +152,10 @@ nav #blogg.active a {
 #portfolio-menu .bedrift a {
 	background-image: url(../images/bedrift.png);
 }
+#portfolio-menu .bryllup a {
+	background-color: grey;
+/*	background-image: url(../images/fashion.png);*/
+}
 
 #portfolio-menu .mote a {
 	background-image: url(../images/fashion.png);
@@ -165,14 +169,6 @@ nav #blogg.active a {
 	background-image: url(../images/portrett.png);
 }
 
-#portfolio-menu .redaksjonelt a {
-	background-image: url(../images/redaksjonelt-p.png);
-}
-
-#portfolio-menu .studio a {
-	background-image: url(../images/studioportrett.png);
-}
-
 #portfolio-menu .akt a span {
 	background-color: #d9d9d9;
 }
@@ -183,6 +179,10 @@ nav #blogg.active a {
 
 #portfolio-menu .bedrift a span {
 	background-color: #f8f8f8;
+}
+
+#portfolio-menu .bryllup a span {
+	background-color: #dddddd;
 }
 
 #portfolio-menu .mote a span {
@@ -205,19 +205,28 @@ nav #blogg.active a {
 	background-color: #c0c0c0;
 }
 
-#portfolio-menu .akt a:hover {
+#portfolio-menu .akt a:hover,
+#portfolio-menu .akt.active a  {
 	background-image: url(../images/akt-h.png);
 }
 
-#portfolio-menu .kunstfotografi a:hover {
+#portfolio-menu .kunstfotografi a:hover,
+#portfolio-menu .kunstfotografi.active a  {
 	background-image: url(../images/artphoto-h.png);
 }
 
-#portfolio-menu .bedrift a:hover {
+#portfolio-menu .bedrift a:hover,
+#portfolio-menu .bedrift.active a  {
 	background-image: url(../images/bedrift-h.png);
 }
 
-#portfolio-menu .mote a:hover {
+#portfolio-menu .bryllup a:hover,
+#portfolio-menu .bryllup.active a  {
+	background-image: url(../images/bryllup-h.png);
+}
+
+#portfolio-menu .mote a:hover,
+#portfolio-menu .mote.active a  {
 	background-image: url(../images/fashion-h.png);
 }
 
@@ -226,31 +235,33 @@ nav #blogg.active a {
 	background-image: url(../images/modellportefolje-h.png);
 }
 
-#portfolio-menu .portrett a:hover {
+#portfolio-menu .portrett a:hover,
+#portfolio-menu .portrett.active a  {
 	background-image: url(../images/portrett-h.png);
 }
 
-#portfolio-menu .redaksjonelt a:hover {
-	background-image: url(../images/redaksjonelt-p-h.png);
-}
-
-#portfolio-menu .studio a:hover {
-	background-image: url(../images/studioportrett-h.png);
-}
-
-#portfolio-menu .akt a:hover span {
+#portfolio-menu .akt a:hover span,
+#portfolio-menu .akt.active a span {
 	background-color: #b088ec;
 }
 
-#portfolio-menu .kunstfotografi a:hover span {
+#portfolio-menu .kunstfotografi a:hover span,
+#portfolio-menu .kunstfotografi.active a span {
 	background-color: #ffe827;
 }
 
-#portfolio-menu .bedrift a:hover span {
+#portfolio-menu .bedrift a:hover span,
+#portfolio-menu .bedrift.active a span {
 	background-color: #ff9e5d;
 }
 
-#portfolio-menu .mote a:hover span {
+#portfolio-menu .bryllup a:hover span,
+#portfolio-menu .bryllup.active a span {
+	background-color: #e39fc6;
+}
+
+#portfolio-menu .mote a:hover span,
+#portfolio-menu .mote.active a span {
 	background-color: #75adf2;
 }
 
@@ -259,18 +270,10 @@ nav #blogg.active a {
 	background-color: #ff4d4d;
 }
 
-#portfolio-menu .portrett a:hover span {
+#portfolio-menu .portrett a:hover span,
+#portfolio-menu .portrett.active a span {
 	background-color: #fe97ff;
 }
-
-#portfolio-menu .redaksjonelt a:hover span {
-	background-color: #e65dff;
-}
-
-#portfolio-menu .studio a:hover span {
-	background-color: #875dff;
-}
-
 
 body.modellportefolje article {
 	margin-right: 20px;
