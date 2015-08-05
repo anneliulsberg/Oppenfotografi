@@ -94,7 +94,7 @@ nav #kontakt.active a {
 
 nav #pris a:hover, 
 nav #pris.active a {
-	background-color: #c8ea85;
+	background-color: #84cc00;
 }
 
 nav #portefolje a:hover,
@@ -440,16 +440,67 @@ body.kontakt #page br.clear {
 }
 
 body.pris #page {
-	background-color: #c8ea85;
+	background-color: #84cc00;
 }
 
-body.portefolje #page {
+/*body.portefolje #page {
 	background-color: #2f2f2f;	
 }
 
 body.blogg #page {
 	background-color: #76b600;
 } 
+
+
+
+
+
+
+body.blogg article {
+	margin-right: 20px;
+	width: 386px;
+	height: 386px;
+	display: inline-block;
+}*/
+
+/*
+body.blogg article a {
+	width: 386px;
+	height: 386px;
+	float: left;
+	color: #484848;
+	text-align: center;
+	margin-top: 20px;
+	font-size: 27px;
+}
+
+body.blogg article a span {
+	margin-top: 290px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #b4b4b4;
+	display: block;
+}
+
+body.blogg article a:hover span {
+	background-color: #ff4d4d;
+	color: #fff;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 article {
 	width: 1200px;
@@ -464,6 +515,7 @@ article h1 {
 }
 
 article p {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin-bottom: 1em;
 }
 
