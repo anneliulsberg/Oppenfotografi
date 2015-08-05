@@ -443,6 +443,20 @@ body.pris #page {
 	background-color: #84cc00;
 }
 
+body.pris p, body.pris table {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 17px;
+}
+
+body.pris h2 {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+body.pris table {
+	margin-bottom: 20px;
+}
+
 body.blogg #page {
 	background-color: #76b600;
 } 
