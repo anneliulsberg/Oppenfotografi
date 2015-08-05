@@ -2,110 +2,110 @@
 
 error_reporting(E_ERROR | E_PARSE);
 ini_set('display_errors', 'On');
-	  
+
 function oppenfotografi_setup() {
-	register_nav_menus(array(
-		'primary' => 'Hovedmeny'
-	));
-}  
+    register_nav_menus(array(
+        'primary' => 'Hovedmeny'
+    ));
+}
 
 function oppen_nav_menu_item_css_class($classes, $item) {
-	if (in_array('current-menu-item', $classes) ){
-		return array('active');
-	}
+    if (in_array('current-menu-item', $classes) ){
+        return array('active');
+    }
 
-	if ($item->object == "category" && is_category()) {
-		$categories = oppen_get_current_categories();
+    if ($item->object == "category" && is_category()) {
+        $categories = oppen_get_current_categories();
 
-		foreach ($categories as $category) {
-			if ($category->cat_ID == $item->object_id) {
-				return array('active');
-			}
-		}
-	}
-	
-	return array();
+        foreach ($categories as $category) {
+            if ($category->cat_ID == $item->object_id) {
+                return array('active');
+            }
+        }
+    }
+
+    return array();
 }
 
 function oppen_nav_menu_item_id($menu_id, $item, $args, $depth) {
-	if ($item) {
-		switch ($item->object) {
-			case "page":
-				$post = get_post($item->object_id);
-				return $post->post_name;
-			case "category":
-				$category = get_category($item->object_id);
-				return $category->slug;
-		}
-	}
-	
-	return $menu_id;
+    if ($item) {
+        switch ($item->object) {
+            case "page":
+                $post = get_post($item->object_id);
+                return $post->post_name;
+            case "category":
+                $category = get_category($item->object_id);
+                return $category->slug;
+        }
+    }
+
+    return $menu_id;
 }
 
 function oppen_body_class($classes) {
-	if (is_category()) {
-		$category_slugs = array();
-		$categories = oppen_get_current_categories();
+    if (is_category()) {
+        $category_slugs = array();
+        $categories = oppen_get_current_categories();
 
-		foreach ($categories as $category) {
-			array_push($category_slugs, $category->slug);
-		}
+        foreach ($categories as $category) {
+            array_push($category_slugs, $category->slug);
+        }
 
-		return $category_slugs;
-	}	else if (is_page()) {
-		$post = get_post($item->object_id);
-		return array($post->post_name);
-	}
-	
-	return $classes;
+        return $category_slugs;
+    }	else if (is_page()) {
+        $post = get_post($item->object_id);
+        return array($post->post_name);
+    }
+
+    return $classes;
 }
 
 function oppen_get_first_attached_image_src($size) {
-	global $post;
+    global $post;
 
-	$images = get_attached_media('image');
+    $images = get_attached_media('image');
 
-	if ($images && is_array($images) && count($images) > 0) {
-		reset($images);
-		$first_id = key($images);
-		
-		// $image_data = array(
-		//   [0] => url
-		// 	 [1] => width
-		//   [2] => height
-		//   [3] => boolean: true if $url is a resized image, false if it is the original or if no image is available.
-		// )
-		$image_data = wp_get_attachment_image_src($first_id, $size);
+    if ($images && is_array($images) && count($images) > 0) {
+        reset($images);
+        $first_id = key($images);
 
-		if ($image_data && is_array($image_data) && count($image_data) > 0) {
-			// var_dump($image_data);
-			return $image_data[0];
-		}
-	}
+        // $image_data = array(
+        //   [0] => url
+        // 	 [1] => width
+        //   [2] => height
+        //   [3] => boolean: true if $url is a resized image, false if it is the original or if no image is available.
+        // )
+        $image_data = wp_get_attachment_image_src($first_id, $size);
 
-	return false;
+        if ($image_data && is_array($image_data) && count($image_data) > 0) {
+            // var_dump($image_data);
+            return $image_data[0];
+        }
+    }
+
+    return false;
 }
 
 function oppen_excerpt_length($length) {
-	return 10;
+    return 10;
 }
 
 function oppen_get_current_categories() {
-	$category_id = get_query_var('cat');
-	$categories = array();
+    $category_id = get_query_var('cat');
+    $categories = array();
 
-	while ($category_id != 0) {
-		$category = get_category($category_id);
-	
-		if (!isset($category) || !is_object($category)) {
-			break;
-		}
+    while ($category_id != 0) {
+        $category = get_category($category_id);
 
-		$categories[] = $category;
-		$category_id = $category->category_parent;
-	}
+        if (!isset($category) || !is_object($category)) {
+            break;
+        }
 
-	return $categories;
+        $categories[] = $category;
+        $category_id = $category->category_parent;
+    }
+
+    return $categories;
 }
 
 add_filter('body_class', 'oppen_body_class', 10, 2);
