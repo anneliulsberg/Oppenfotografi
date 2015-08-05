@@ -55,9 +55,15 @@ function oppen_body_class($classes) {
         }
 
         return $category_slugs;
-    }	else if (is_page()) {
+    } else if (is_page()) {
         $post = get_post($item->object_id);
         return array($post->post_name);
+    } else if (is_single()) {
+        $categories = get_the_category();
+
+        foreach ($categories as $category) {
+            array_push($classes, $category->slug);
+        }
     }
 
     return $classes;
