@@ -14,6 +14,9 @@ $top_level_categories = get_categories(array(
     'orderby' => 'name',
 ));
 
+set_query_var('is_category_blog', $is_category_blog);
+set_query_var('is_sub_category', $is_sub_category);
+
 ?>
 
 <section class="category">
@@ -22,6 +25,7 @@ $top_level_categories = get_categories(array(
             <?php if (!$is_category_blog) : ?>
                 <ul id="portfolio-menu">
                     <?php foreach ($top_level_categories as $category) :
+
                         $slug = esc_attr($category->slug);
                         $link = get_category_link($category->term_id);
                         $name = $category->name;
@@ -35,30 +39,17 @@ $top_level_categories = get_categories(array(
 
                     <?php endforeach; ?>
                 </ul>
+
             <?php endif; ?>
+
+            <h1><?php echo $current_category->name ?></h1>
 
             <?php
 
-            if (have_posts()) :
                 while (have_posts()) :
                     the_post();
-
-                    if ($is_category_blog) :
-                            get_template_part('content');
-                    elseif ($is_sub_category) :
-                        $image_src = oppen_get_first_attached_image_src('medium-cropped'); ?>
-                        <article>
-                            <a href="<?php echo get_permalink(); ?>" <?php echo $image_src ? "style='background-image: url($image_src)'" : '' ?>>
-                                <span><?php the_title(); ?></span>
-                            </a>
-                        </article>
-                    <?php endif;
+                    get_template_part('content');
                 endwhile;
-            else :
-
-                get_template_part('content', 'none');
-
-            endif;
 
             ?>
         </div>
