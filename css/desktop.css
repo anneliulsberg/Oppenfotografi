@@ -536,6 +536,10 @@ article a:hover {
 	color: rgba(0, 0, 0, .65);
 }
 
+h1.category-name {
+	display: none;
+}
+
 footer {
 	height: 30px;
 	background-color: rgba(0, 0, 0, .65);
