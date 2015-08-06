@@ -42,7 +42,7 @@ set_query_var('is_sub_category', $is_sub_category);
 
             <?php endif; ?>
 
-            <h1><?php echo $current_category->name ?></h1>
+            <h1 class="category-name"><?php echo $current_category->name ?></h1>
 
             <?php
 
