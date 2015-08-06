@@ -60,11 +60,7 @@ function oppen_body_class($classes) {
         $post = get_post($item->object_id);
         return array($post->post_name);
     } else if (is_single()) {
-        $categories = get_the_category();
-
-        if ($categories && count($categories) > 0) {
-            $categories = oppen_get_current_categories($categories[0]->term_id);
-        }
+        $categories = oppen_get_current_categories();
 
         foreach ($categories as $category) {
             array_push($classes, $category->slug);
@@ -104,9 +100,21 @@ function oppen_excerpt_length($length) {
     return 10;
 }
 
-function oppen_get_current_categories($category_id = false) {
-    if (!$category_id) {
+function oppen_get_current_categories() {
+    $category_id = false;
+
+    if (is_single()) {
+        $categories = get_the_category();
+
+        if ($categories && count($categories) > 0) {
+            $category_id = $categories[0]->term_id;
+        }
+    } else if (is_category()) {
         $category_id = get_query_var('cat');
+    }
+
+    if (!$category_id) {
+        return false;
     }
 
     $categories = array();
