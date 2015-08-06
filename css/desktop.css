@@ -305,8 +305,8 @@ body.modellportefolje article a:hover span {
 	color: #fff;
 }
 
-body.modellportefolje.single {
-	
+body.modellportefolje.single #page {
+	background-color: #2f2f2f;	
 }
 
 body.modellportefolje.single article {
