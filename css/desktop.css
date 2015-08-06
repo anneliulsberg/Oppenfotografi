@@ -316,14 +316,16 @@ body.modellportefolje.single #page {
 	background-color: #2f2f2f;	
 }
 
-body.modellportefolje.single article {
+body.modellportefolje.single article,
+body.blogg.single article {
 	height: 100%;
 	width: 1200px;
 	margin: 0 auto;
 	float: none;
 }
 
-body.modellportefolje.single article a {
+body.modellportefolje.single article a,
+body.blogg.single article a {
 	height: 100%;
 	width: 1200px;
 	color: #fff;
