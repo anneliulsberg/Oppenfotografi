@@ -276,15 +276,14 @@ nav #blogg.active a {
 }
 
 body.modellportefolje article {
-	margin-right: 20px;
 	width: 386px;
 	height: 386px;
 	display: inline-block;
 }
 
 body.modellportefolje article a {
-	width: 386px;
-	height: 386px;
+	width: 400px;
+	height: 400px;
 	float: left;
 	color: #484848;
 	text-align: center;
@@ -337,7 +336,6 @@ body.modellportefolje article a:hover span {
 	top: 100px;
 	right: 0;
 }
-
 
 #slideshow li:nth-child(2) a {
 	width: 460px;
