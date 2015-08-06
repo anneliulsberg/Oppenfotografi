@@ -18,15 +18,18 @@ $top_level_categories = get_categories(array(
             $slug = esc_attr($category->slug);
             $link = get_category_link($category->term_id);
             $name = $category->name;
-            $is_active = array_reduce($current_categories, function($carry, $item) {
-                global $category;
-                return $carry || $item->cat_ID == $category->cat_ID;
-            });
-            $active_class = $is_active ? ' active' : '';
+            $active_class = '';
+
+            foreach ($current_categories as $current_category) {
+                if ($current_category->term_id == $category->term_id) {
+                    $active_class = ' active';
+                    break;
+                }
+            }
 
             ?>
 
-            <li class="<?php echo $slug . $active_class ?>"><a href="<?php echo $link ?>"><span><?php echo $name ?></span></a></li>
+            <li class="<?php echo esc_attr($slug . $active_class) ?>"><a href="<?php echo $link ?>"><span><?php echo $name ?></span></a></li>
 
         <?php endforeach; ?>
     </ul>
