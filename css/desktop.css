@@ -466,58 +466,22 @@ body.portefolje #page {
 	background-color: #2f2f2f;	
 }
 
-
-/*
-
-
-
-
-
 body.blogg article {
-	margin-right: 20px;
-	width: 386px;
-	height: 386px;
-	display: inline-block;
-}*/
-
-/*
-body.blogg article a {
-	width: 386px;
-	height: 386px;
+	width: 400px;
+	height: 400px;
 	float: left;
-	color: #484848;
-	text-align: center;
-	margin-top: 20px;
-	font-size: 27px;
+}
+
+body.blogg article a {
 }
 
 body.blogg article a span {
-	margin-top: 290px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: #b4b4b4;
-	display: block;
+	
 }
 
 body.blogg article a:hover span {
-	background-color: #ff4d4d;
-	color: #fff;
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+}
 
 article {
 	width: 1200px;
