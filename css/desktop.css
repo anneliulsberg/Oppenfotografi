@@ -114,6 +114,7 @@ nav #blogg.active a {
 
 #portfolio-menu li {
 	float: left;
+	margin-bottom: 40px;
 }
 
 #portfolio-menu li a {
@@ -280,7 +281,6 @@ body.blogg article {
 	width: 400px;
 	height: 400px;
 	float: left;	
-	margin-top: 20px;
 }
 
 body.modellportefolje article a,
