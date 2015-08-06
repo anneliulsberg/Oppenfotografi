@@ -10,6 +10,7 @@ function oppen_setup() {
 
     add_theme_support('post-thumbnails');
     set_post_thumbnail_size(386, 386, array('center', 'top'));
+    add_image_size('medium-cropped', 400, 400, array('center', 'top'));
 }
 
 function oppen_nav_menu_item_css_class($classes, $item) {
