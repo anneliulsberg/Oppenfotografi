@@ -275,24 +275,26 @@ nav #blogg.active a {
 	background-color: #fe97ff;
 }
 
-body.modellportefolje article {
+body.modellportefolje article,
+body.blogg article {
 	width: 400px;
 	height: 400px;
 	float: left;	
 	margin-top: 20px;
 }
 
-body.modellportefolje article a {
+body.modellportefolje article a,
+body.blogg article a {
 	width: 400px;
 	height: 400px;
 	display: inline-block;
 	color: #484848;
 	text-align: center;
-
 	font-size: 27px;
 }
 
-body.modellportefolje article a span {
+body.modellportefolje article a span,
+body.blogg article a span {
 	margin-top: 290px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -300,7 +302,8 @@ body.modellportefolje article a span {
 	display: block;
 }
 
-body.modellportefolje article a:hover span {
+body.modellportefolje article a:hover span,
+body.blogg article a:hover span {
 	background-color: #ff4d4d;
 	color: #fff;
 }
