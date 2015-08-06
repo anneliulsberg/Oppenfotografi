@@ -18,7 +18,7 @@ function oppen_nav_menu_item_css_class($classes, $item) {
         return array('active');
     }
 
-    if ($item->object == "category" && is_category()) {
+    if ($item->object == 'category') {
         $categories = oppen_get_current_categories();
 
         foreach ($categories as $category) {
@@ -27,7 +27,7 @@ function oppen_nav_menu_item_css_class($classes, $item) {
             }
         }
     }
-
+    
     return array();
 }
 
