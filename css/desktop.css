@@ -308,6 +308,10 @@ body.blogg article a:hover span {
 	color: #fff;
 }
 
+body.blogg article a time {
+	font-size: 14px;
+}
+
 body.modellportefolje.single #page {
 	background-color: #2f2f2f;	
 }
