@@ -9,10 +9,13 @@ $background_image = $image_src ? "style='background-image: url($image_src)'" : '
     <article>
         <h1>
             <a href="<?php echo get_permalink(); ?>" <?php echo $background_image ?>>
-                <span><?php the_title(); ?></span>
-                <time datetime="<?php echo esc_attr(date_i18n('c', strtotime($post->post_date))) ?>">
-                    <?php echo date_i18n(get_option('date_format'), strtotime($post->post_date)) ?>
-                </time>
+                <span>
+                    <?php the_title(); ?>
+                    
+                    <time datetime="<?php echo esc_attr(date_i18n('c', strtotime($post->post_date))) ?>">
+                        <?php echo date_i18n(get_option('date_format'), strtotime($post->post_date)) ?>
+                    </time>
+                </span>
             </a>
         </h1>
     </article>
