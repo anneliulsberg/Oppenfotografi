@@ -498,24 +498,6 @@ body.portefolje #page {
 	background-color: #2f2f2f;	
 }
 
-body.blogg article {
-	width: 400px;
-	height: 400px;
-	float: left;
-}
-
-body.blogg article a {
-	display: inline-block;
-}
-
-body.blogg article a span {
-	
-}
-
-body.blogg article a:hover span {
-	
-}
-
 article {
 	width: 1200px;
 	margin: 0 auto;
