@@ -305,6 +305,24 @@ body.modellportefolje article a:hover span {
 	color: #fff;
 }
 
+body.modellportefolje.single {
+	
+}
+
+body.modellportefolje.single article {
+	height: 100%;
+	width: 1200px;
+	margin: 0 auto;
+	float: none;
+}
+
+body.modellportefolje.single article a {
+	height: 100%;
+	width: 1200px;
+	color: #fff;
+	text-align: left;
+}
+
 #slideshow {
 	position: relative;
 	top: 104;
@@ -480,6 +498,7 @@ body.blogg article {
 }
 
 body.blogg article a {
+	display: inline-block;
 }
 
 body.blogg article a span {
