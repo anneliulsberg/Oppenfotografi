@@ -14,22 +14,51 @@ set_query_var('is_sub_category', $is_sub_category);
     <?php get_template_part('portfolio-menu'); ?>
 
     <?php while (have_posts()) : the_post(); ?>
-        <article>
 
-                <h1><?php the_title() ?></h1>
+        <article>
+            <h1><?php the_title() ?></h1>
+
+            <?php if ($is_category_blog) : ?>
 
                 <div id="metadata">
-                    Publisert <?php the_date(); ?> i
-                    <?php
-                        $category = get_the_category();
-                        echo '<a href="' . get_category_link($category[0]->term_id) . '">' . $category[0]->name . '</a> ';
-                    ?>
+                    Publisert <?php the_date(); ?>
                 </div>
-            <div id="media"><?php echo get_the_post_thumbnail() ?></div>
-            <div id="body"><?php the_content() ?></div>
-        </article>
-    <?php endwhile; ?>
 
+            <? endif; ?>
+
+            <div id="body">
+            <?php
+
+                // Fetch post content
+                $content = get_post_field('post_content', get_the_ID());
+
+                // Get content parts
+                $content_parts = get_extended($content);
+
+                // Output part before <!--more--> tag
+                echo $content_parts['main'];
+
+            ?>
+            </div>
+
+            <?php if (wp_count_attachments('image') > 0) : ?>
+
+                <ul id="media">
+
+                <?php foreach (get_attached_media('image') as $image) :
+                    $title = apply_filters('the_title', $image->post_title);
+                    $link = wp_get_attachment_image_src($image->ID, 'large')[0];
+                    $src = wp_get_attachment_image_src($image->ID, 'medium-cropped')[0]; ?>
+
+                    <li><a href="<?php echo $link ?>" style="background-image: url('<?php echo $src ?>')"><span><?php echo $title ?></span></a></li>
+                <?php endforeach; ?>
+
+                </ul>
+
+            <?php endif; ?>
+        </article>
+
+    <?php endwhile; ?>
 </div>
 
 <?php get_footer(); ?>
