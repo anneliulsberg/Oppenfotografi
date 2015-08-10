@@ -309,9 +309,13 @@ body.blogg article a span {
 	display: block;
 }
 
-body.modellportefolje article a:hover span,
-body.blogg article a:hover span {
+body.modellportefolje article a:hover span {
 	background-color: #ff4d4d;
+	color: #fff;
+}
+
+body.blogg article a:hover span {
+	background-color: #5f9200;
 	color: #fff;
 }
 
