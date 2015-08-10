@@ -566,6 +566,20 @@ article a:hover {
 	color: rgba(0, 0, 0, .65);
 }
 
+article #body {
+	margin-bottom: 20px;
+}
+
+article ul#media li a {
+	width: 400px;
+	height: 400px;
+	float: left;
+}
+
+article ul#media li a span {
+	display: none;
+}
+
 h1.category-name {
 	display: none;
 }
