@@ -41,17 +41,38 @@ set_query_var('is_sub_category', $is_sub_category);
             ?>
             </div>
 
-            <?php if (wp_count_attachments('image') > 0) : ?>
+            <?php if (wp_count_attachments('image') > 0) : $images = array_values(get_attached_media('image')); ?>
 
                 <ul id="media">
 
-                <?php foreach (get_attached_media('image') as $image) :
+                <?php for ($i = 0; $i < count($images); $i++) :
+                    $image = $images[$i];
+                    $id = $image->ID;
                     $title = apply_filters('the_title', $image->post_title);
-                    $link = wp_get_attachment_image_src($image->ID, 'large')[0];
-                    $src = wp_get_attachment_image_src($image->ID, 'medium-cropped')[0]; ?>
+                    $large_image_data = wp_get_attachment_image_src($id, 'large');
+                    $large_image_src = $large_image_data[0];
+                    $large_image_width = $large_image_data[1];
+                    $large_image_height = $large_image_data[2];
+                    $medium_image_src = wp_get_attachment_image_src($id, 'medium-cropped')[0];
+                    $first = $i === 0;
+                    $last = $i === (count($images) - 1);
+                    $prev_id = $first ? $images[count($images) - 1]->ID : $images[$i - 1]->ID;
+                    $next_id = $last ? $images[0]->ID : $images[$i + 1]->ID; ?>
 
-                    <li><a href="<?php echo $link ?>" style="background-image: url('<?php echo $src ?>')"><span><?php echo $title ?></span></a></li>
-                <?php endforeach; ?>
+                    <li>
+                        <a href="#image-<?php echo $id ?>" style="background-image: url('<?php echo $medium_image_src ?>')"><span><?php echo $title ?></span></a>
+                        <div id="image-<?php echo $id ?>" class="overlay">
+                            <img src="<?php echo $large_image_src ?>" width="<?php echo $large_image_width ?>" height="<?php echo $large_image_height ?>">
+                            <nav>
+                                <ul>
+                                    <li class="close"><a href="#page" rel="index">Lukk</a></li>
+                                    <li class="prev"><a href="#image-<?php echo $prev_id ?>" rel="prev <?php echo $first ? 'last' : '' ?>">Forrige</a></li>
+                                    <li class="next"><a href="#image-<?php echo $next_id ?>" rel="next <?php echo $last ? 'first' : '' ?>">Neste</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                <?php endfor; ?>
 
                 </ul>
 
