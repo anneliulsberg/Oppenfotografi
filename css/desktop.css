@@ -126,6 +126,14 @@ nav #blogg.active a {
 	padding-top: 110px;
 	width: 171px;
 	height: 61px;
+	transition: all 0.3s;
+	background-size: 171px 171px;
+	background-position: 0px 0px;
+}
+
+#portfolio-menu li a:hover {
+	background-size: 181px 181px;
+	background-position: -2px -2px;
 }
 
 #portfolio-menu li a span {
@@ -141,9 +149,8 @@ nav #blogg.active a {
 	color: #fff;
 }
 
-
 #portfolio-menu .akt a {
-	background-image: url(../images/akt.png);
+	background-image: url(../images/akt.png);	
 }
 
 #portfolio-menu .kunstfotografi a {
