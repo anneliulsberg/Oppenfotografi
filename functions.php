@@ -27,7 +27,7 @@ function oppen_nav_menu_item_css_class($classes, $item) {
             }
         }
     }
-    
+
     return array();
 }
 
