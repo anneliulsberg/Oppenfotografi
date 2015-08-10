@@ -150,15 +150,21 @@ nav #blogg.active a {
 }
 
 #portfolio-menu .akt a {
-	background-image: url(../images/akt.png);	
+	background-image: url(../images/akt.png);
+	filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%);
 }
 
 #portfolio-menu .kunstfotografi a {
-	background-image: url(../images/artphoto.png);
+	background-image: url(../images/artphoto.png);	
+	filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%);	
 }
 
 #portfolio-menu .bedrift a {
 	background-image: url(../images/bedrift.png);
+	filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%);
 }
 #portfolio-menu .bryllup a {
 	background-color: grey;
@@ -167,14 +173,20 @@ nav #blogg.active a {
 
 #portfolio-menu .mote a {
 	background-image: url(../images/fashion.png);
+	filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%);
 }
 
 #portfolio-menu .modellportefolje a {
 	background-image: url(../images/modellportefolje.png);
+	filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%);
 }
 
 #portfolio-menu .portrett a {
 	background-image: url(../images/portrett.png);
+	filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%);
 }
 
 #portfolio-menu .akt a span {
@@ -215,37 +227,44 @@ nav #blogg.active a {
 
 #portfolio-menu .akt a:hover,
 #portfolio-menu .akt.active a  {
-	background-image: url(../images/akt-h.png);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
 }
 
 #portfolio-menu .kunstfotografi a:hover,
 #portfolio-menu .kunstfotografi.active a  {
-	background-image: url(../images/artphoto-h.png);
+	filter: greyscale (0%);
+	-webkit-filter: grayscale(0%);		
 }
 
 #portfolio-menu .bedrift a:hover,
 #portfolio-menu .bedrift.active a  {
-	background-image: url(../images/bedrift-h.png);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);		
 }
 
 #portfolio-menu .bryllup a:hover,
 #portfolio-menu .bryllup.active a  {
-	background-image: url(../images/bryllup-h.png);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);		
 }
 
 #portfolio-menu .mote a:hover,
 #portfolio-menu .mote.active a  {
-	background-image: url(../images/fashion-h.png);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
 }
 
 #portfolio-menu .modellportefolje a:hover,
 #portfolio-menu .modellportefolje.active a {
-	background-image: url(../images/modellportefolje-h.png);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
 }
 
 #portfolio-menu .portrett a:hover,
 #portfolio-menu .portrett.active a  {
-	background-image: url(../images/portrett-h.png);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
 }
 
 #portfolio-menu .akt a:hover span,
