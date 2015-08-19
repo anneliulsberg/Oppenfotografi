@@ -64,8 +64,8 @@ set_query_var('is_sub_category', $is_sub_category);
                         <div id="image-<?php echo $id ?>" class="overlay">
                             <nav>
                                 <ul>
-                                    <li class="close"><a href="#page" rel="index"><span>Lukk</span></a></li>
                                     <li class="prev"><a href="#image-<?php echo $prev_id ?>" rel="prev <?php echo $first ? 'last' : '' ?>"><span>Forrige</span></a></li>
+                                    <li class="close"><a href="#page" rel="index"><span>Lukk</span></a></li>
                                     <li class="next"><a href="#image-<?php echo $next_id ?>" rel="next <?php echo $last ? 'first' : '' ?>"><span>Neste</span></a></li>
                                 </ul>
                             </nav>
