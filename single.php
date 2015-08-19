@@ -62,7 +62,7 @@ set_query_var('is_sub_category', $is_sub_category);
                     <li>
                         <a href="#image-<?php echo $id ?>" style="background-image: url('<?php echo $medium_image_src ?>')"><span><?php echo $title ?></span></a>
                         <div id="image-<?php echo $id ?>" class="overlay">
-                            <img src="<?php echo $large_image_src ?>" width="<?php echo $large_image_width ?>" height="<?php echo $large_image_height ?>">
+                            <img src="<?php echo $large_image_src ?>">
                             <nav>
                                 <ul>
                                     <li class="close"><a href="#page" rel="index">Lukk</a></li>
