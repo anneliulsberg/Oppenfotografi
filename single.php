@@ -62,7 +62,6 @@ set_query_var('is_sub_category', $is_sub_category);
                     <li>
                         <a href="#image-<?php echo $id ?>" style="background-image: url('<?php echo $medium_image_src ?>')"><span><?php echo $title ?></span></a>
                         <div id="image-<?php echo $id ?>" class="overlay">
-                            <img src="<?php echo $large_image_src ?>">
                             <nav>
                                 <ul>
                                     <li class="close"><a href="#page" rel="index"><span>Lukk</span></a></li>
@@ -70,6 +69,7 @@ set_query_var('is_sub_category', $is_sub_category);
                                     <li class="next"><a href="#image-<?php echo $next_id ?>" rel="next <?php echo $last ? 'first' : '' ?>"><span>Neste</span></a></li>
                                 </ul>
                             </nav>
+                            <img src="<?php echo $large_image_src ?>">
                         </div>
                     </li>
                 <?php endfor; ?>
