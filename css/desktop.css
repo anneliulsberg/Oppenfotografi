@@ -540,6 +540,66 @@ body.portefolje #page {
 	background-color: #2f2f2f;	
 }
 
+#media .overlay {
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	z-index: 99;
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+}
+
+#media .overlay img {
+	max-height: 100%;
+	max-width: 100%;	
+}
+
+#media .overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	padding-top: 40px;
+	padding-bottom: 100px;
+}
+
+#media nav {
+	margin-top: 20px;
+	position: relative;
+	height: 40px;
+}
+
+#media .prev a {
+	position: absolute;
+	left: 55%;
+	width: 50px;
+	height: 50px;
+	background: url(../images/navigation-lightbox.png) no-repeat top left;
+	padding: 0;
+}
+
+#media .next a {
+	position: absolute;
+	left: 95%;
+	width: 50px;
+	height: 50px;
+	background: url(../images/navigation-lightbox.png) no-repeat top right;
+	padding: 0;
+}
+
+#media .close a {
+	position: absolute;
+	left: 75%;
+	width: 50px;
+	height: 50px;
+	background: url(../images/navigation-lightbox.png) no-repeat -50px 0;
+	padding: 0;
+}
+
 article {
 	width: 1200px;
 	margin: 0 auto;
