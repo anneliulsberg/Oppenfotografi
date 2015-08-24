@@ -167,8 +167,9 @@ nav #blogg.active a {
 	-webkit-filter: grayscale(100%);
 }
 #portfolio-menu .bryllup a {
-	background-color: grey;
-/*	background-image: url(../images/fashion.png);*/
+	background-image: url(../images/bryllup.png);
+	filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%);
 }
 
 #portfolio-menu .mote a {
