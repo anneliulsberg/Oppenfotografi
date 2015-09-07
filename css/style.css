@@ -416,7 +416,7 @@ body.blogg.single article a {
 #slideshow li:nth-child(3) a {
 	width: 280px;
 	height: 285px;
-	background-image: url(../images/slideshow-red-1.jpg);
+	background-image: url(../images/slideshow-bry-1.jpg);
 	top: 560px;
 	right: 925px;		
 }
@@ -670,6 +670,15 @@ footer a:hover {
 footer img {
 	padding: 0 5px;
 }
+
+@media screen and (max-width: 1150px) {
+	
+}
+
+@media screen and (max-width: 320px) {
+		
+}
+
 
 
 

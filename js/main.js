@@ -12,7 +12,7 @@ jQuery(function($) {
 	        interval: 7 * 1000
 	});
 	$('#slideshow li:nth-child(3) a').bgswitcher({
-	        images: [baseUri + "/images/slideshow-red-1.jpg", baseUri + "/images/slideshow-red-2.jpg"],
+	        images: [baseUri + "/images/slideshow-bry-1.jpg", baseUri + "/images/slideshow-bry-2.jpg"],
 	        effect: "fade",
 	        interval: 9 * 1000
 	});
