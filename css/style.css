@@ -671,9 +671,187 @@ footer img {
 	padding: 0 5px;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1024px) {
+	.wrapper {
+		width: 1024px;
+	}
+		
+	#portfolio-menu {
+		width: 1024px;
+	}
+		
+	#portfolio-menu li a {
+		width: 146px;
+	}
+	
+	body.modellportefolje article,
+	body.blogg article {
+		width: 341px;
+		height: 341px;
+	}
+	
+	body.modellportefolje article a,
+	body.blogg article a {
+		width: 341px;
+		height: 341px;
+		background-size: 341px 341px;
+	}
+	
+	body.modellportefolje article a:hover,
+	body.blogg article a:hover {
+		background-size: 361px 361px;
+	}
+	
+	body.modellportefolje article a span,
+	body.blogg article a span {
+		margin-top: 250px;
+		font-size: 21px;
+	}
+		
+	body.blogg article a time {
+		font-size: 14px;
+	}
+	
+	
+	body.modellportefolje.single article,
+	body.blogg.single article {
+		height: 100%;
+		width: 1024px;
+	}
+	
+	body.modellportefolje.single article a,
+	body.blogg.single article a {
+		height: 100%;
+		width: 1024px;
+	}
+
+	article {
+		width: 1024px;
+	}
+	
+	article h1,
+	article #body,
+	article #metadata {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	article ul#media li a {
+	    width: 341px;
+	    height: 341px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	header {
+		width: 768px;
+	}
+	.wrapper {
+		width: 768px;
+	}
+	
+	#portfolio-menu {
+		width: 768px;
+	}
+	
+	#portfolio-menu li {
+		float: left;
+		margin-bottom: 40px;
+	}
+	
+	#portfolio-menu li a {
+		font-size: 18px;
+		padding-top: 70px;
+		width: 109px;
+		height: 39px;
+		background-size: 109px 109px;
+	}
+	
+	#portfolio-menu li a:hover {
+		background-size: 119px 119px;
+	}
+	
+	#portfolio-menu li a span {
+		height: 15px;
+		padding-top: 5px;
+		padding-bottom: 10px;
+	}
+				
+	body.modellportefolje article,
+	body.blogg article {
+		width: 256px;
+		height: 256px;
+	}
+	
+	body.modellportefolje article a,
+	body.blogg article a {
+		width: 256px;
+		height: 256px;
+		background-size: 256px 256px;
+	}
+	
+	body.modellportefolje article a:hover,
+	body.blogg article a:hover {
+		background-size: 266px 266px;
+	}
+	
+	body.modellportefolje article a span,
+	body.blogg article a span {
+		margin-top: 160px;
+	}
+		
+	
+	
+	body.modellportefolje.single article,
+	body.blogg.single article {
+		height: 100%;
+		width: 768px;
+	}
+	
+	body.modellportefolje.single article a,
+	body.blogg.single article a {
+		height: 100%;
+		width: 768px;
+	}
+
+	body.pris table {
+		width: 768px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	article {
+		width: 768px;
+	}
+	
+	article p {
+		margin-left: 20px;
+	}
+	
+	article h1,
+	body.pris article h2,
+	article #body,
+	article #metadata {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	body.blogg article h1 {
+		margin-left: 0;
+	}
+	
+	article ul#media li a {
+	    width: 256px;
+	    height: 256px;
+	}
+	
+	article iframe {
+	width: 500px;
+	}
 	
 }
+
 
 @media screen and (max-width: 320px) {
 		
