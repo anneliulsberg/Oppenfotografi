@@ -730,6 +730,61 @@ footer img {
 	body.blogg.single article {
 		width: 400px;
 	}
+	
+	#portfolio-menu {
+		margin-bottom: 40px;
+	}
+	
+	#portfolio-menu li {
+		float: none;
+		margin-bottom: 0;
+	}
+	
+	#portfolio-menu li a {
+	    font-size: 24px;
+	    padding-top: 0;
+	    width: 400px;
+	    height: 45px;
+	    background-size: 0 0;
+	}
+	
+	#portfolio-menu li a:hover {
+		background-size: 0 0;
+	}
+	
+	#portfolio-menu li a span {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+		
+	#portfolio-menu .akt a {
+		background-image: none;
+	}
+	
+	#portfolio-menu .kunstfotografi a {
+		background-image: none;
+	}
+	
+	#portfolio-menu .bedrift a {
+		background-image: none;
+	}
+	
+	#portfolio-menu .bryllup a {
+		background-image: none;
+	}
+	
+	#portfolio-menu .mote a {
+		background-image: none;
+	}
+	
+	#portfolio-menu .modellportefolje a {
+		background-image: none;
+	}
+	
+	#portfolio-menu .portrett a {
+		background-image: none;
+	}
+	
 }
 
 
