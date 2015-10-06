@@ -671,40 +671,71 @@ footer img {
 	padding: 0 5px;
 }
 
+@media screen and (max-width: 1199px) {
 	
+	header {
+		width: 800px;
 	}
 	
+	.wrapper {
+		width: 800px;
 
 	}
 	
+	body.modellportefolje.single article, 
+	body.blogg.single article {
+		width: 800px;
 	}
 	
 	#portfolio-menu {
+		width: 800px;
 	}
 	
 	#portfolio-menu li a {
+	    font-size: 20px;
+	    padding-top: 64px;
+	    width: 114px;
+	    height: 50px;
+	    background-size: 114px 114px;
 	}
 	
 	#portfolio-menu li a:hover {
+		background-size: 124px 124px;
 	}
 	
 	#portfolio-menu li a span {
+		padding-top: 7px;
 		padding-bottom: 10px;
 	}
+}
+
+@media screen and (max-width: 800px) {
 	
+	header {
+		width: 400px;
+		text-align: center;
 	}
 	
+	.wrapper {
+		width: 400px;
 	}
 	
+	nav {
 		
+		left: 50%;
+		margin-left: -180px;	
+	}	
 	
+	body.modellportefolje.single article, 
 	body.blogg.single article {
+		width: 400px;
 	}
 }
 
 
 @media screen and (max-width: 320px) {
 		
+}
 
 
 
