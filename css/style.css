@@ -683,11 +683,9 @@ footer img {
 	
 	.wrapper {
 		width: 800px;
-
 	}
 	
 	#slideshow {
-		position: relative;
 		top: 104;
 		right: 0;
 		height: 1230px;
@@ -696,7 +694,6 @@ footer img {
 	#slideshow li:nth-child(1) a {
 		width: 745px;
 		height: 745px;
-		background-image: url(../images/slideshow-art-1.jpg);
 		top: 100px;
 		right: 27px;
 	}
@@ -704,7 +701,6 @@ footer img {
 	#slideshow li:nth-child(2) a {
 		width: 284px;
 		height: 285px;
-		background-image: url(../images/slideshow-studio-1.jpg);
 		background-size: 284px ;
 		top: 845px;
 		right: 488px;	
@@ -713,7 +709,6 @@ footer img {
 	#slideshow li:nth-child(3) a {
 		width: 280px;
 		height: 285px;
-		background-image: url(../images/slideshow-bry-1.jpg);
 		top: 845px;
 		right: 208px;		
 	}
@@ -721,7 +716,6 @@ footer img {
 	#slideshow li:nth-child(4) a {
 		width: 180px;
 		height: 165px;
-		background-image: url(../images/slideshow-fash-1.jpg);
 		top: 965px;
 		right: 28px;	
 	}
@@ -729,7 +723,6 @@ footer img {
 	#slideshow li:nth-child(5) a {
 		width: 110px;
 		height: 120px;
-		background-image: url(../images/slideshow-bedr-1.jpg);
 		top: 845px;
 		right: 28px;	
 	}
@@ -737,17 +730,8 @@ footer img {
 	#slideshow li:nth-child(6) a {
 		width: 70px;
 		height: 120px;
-		background-image: url(../images/slideshow-akt-1.jpg);
 		top: 845px;
 		right: 138px;	
-	}
-	
-	#slideshow li a span {
-		display: none;
-		height: 50px;
-		text-align: right;
-		padding-right: 20px;
-		padding-top: 15px;
 	}
 	
 	#slideshow li:nth-child(2) a span {
