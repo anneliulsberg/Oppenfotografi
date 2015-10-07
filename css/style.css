@@ -711,6 +711,14 @@ footer img {
 		padding-top: 7px;
 		padding-bottom: 10px;
 	}
+	
+	body.pris #page article {
+		width: 800px;
+	}
+	
+	body.pris #page article table td:first-child {
+		width: 700px;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -725,11 +733,18 @@ footer img {
 	}
 	
 	nav {
-		
 		left: 50%;
 		margin-left: -180px;	
 	}	
 	
+	body.pris #page article {
+		width: 400px;
+	}
+	
+	body.pris #page article table td:first-child {
+		width: 300px;
+	}
+		
 	body.modellportefolje.single article, 
 	body.blogg.single article {
 		width: 400px;
