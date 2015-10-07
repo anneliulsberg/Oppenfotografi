@@ -518,6 +518,10 @@ body.pris #page {
 	background-color: #84cc00;
 }
 
+body.pris #page article table td:first-child {
+	padding-bottom: 10px;
+}
+
 body.pris p, body.pris table {
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	font-size: 17px;
