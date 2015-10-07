@@ -719,6 +719,14 @@ footer img {
 	body.pris #page article table td:first-child {
 		width: 700px;
 	}
+		
+	body.kontakt #page article {
+		width: 800px;
+	}
+	
+	body.kontakt #page article p iframe {
+		width: 400px;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -736,6 +744,14 @@ footer img {
 		left: 50%;
 		margin-left: -180px;	
 	}	
+	
+	body.kontakt #page article {
+		width: 400px;
+	}
+	
+	body.kontakt #page article p iframe {
+		width: 400px;
+	}
 	
 	body.pris #page article {
 		width: 400px;
