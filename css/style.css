@@ -966,6 +966,9 @@ footer img {
 		height: 400px;
 	}
 	
+	body.pris #page article table td:first-child {
+		width: 270px;
+	}
 	
 	#page article table tbody tr td {
 		padding: 0 10px;
