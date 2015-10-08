@@ -36,10 +36,9 @@ $categories = get_categories(array(
 
                         for ($i = 0; $i < count($images); $i++) :
                             $image = $images[$i];
-                            $id = $image->ID;
                             $title = apply_filters('the_title', $image->post_title);
                             $image_size = 'slideshow-' . ($i + 1);
-                            $image_data = wp_get_attachment_image_src($id, $image_size); ?>
+                            $image_data = wp_get_attachment_image_src($image->ID, $image_size); ?>
 
                             <img src="<?php echo $image_data[0] ?>" width="<?php echo $image_data[1] ?>" height="<?php echo $image_data[2] ?>" alt="<?php echo esc_attr($title) ?>">
 
