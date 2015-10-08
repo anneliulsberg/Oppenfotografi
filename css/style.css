@@ -950,7 +950,8 @@ footer img {
 	
 	nav {
 		left: 50%;
-		margin-left: -150px;	
+		margin-left: -160px;
+		width: 320px;	
 	}	
 	
 	nav ul li a {
