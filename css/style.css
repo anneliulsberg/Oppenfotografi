@@ -962,6 +962,10 @@ footer img {
 		padding: 0 10px;
 	}	
 	
+	body.kontakt #page article p iframe {
+		height: 400px;
+	}
+	
 	
 	#page article table tbody tr td {
 		padding: 0 10px;
