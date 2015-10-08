@@ -41,7 +41,7 @@ set_query_var('is_sub_category', $is_sub_category);
             ?>
             </div>
 
-            <?php if (wp_count_attachments('image') > 0) : $images = array_values(get_attached_media('image')); ?>
+            <?php if (count(wp_count_attachments('image')) > 0) : $images = array_values(get_attached_media('image')); ?>
 
                 <ul id="media">
 
