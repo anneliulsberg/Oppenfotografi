@@ -133,9 +133,15 @@ function oppen_get_current_categories() {
     return $categories;
 }
 
+function oppen_image_send_to_editor($html, $id, $caption, $title, $align, $url) {
+    return $html;
+}
+
 add_action('after_setup_theme', 'oppen_setup');
 add_filter('body_class', 'oppen_body_class', 10, 2);
 add_filter('nav_menu_item_id', 'oppen_nav_menu_item_id', 10, 2);
 add_filter('nav_menu_css_class' , 'oppen_nav_menu_item_css_class', 10, 2);
 add_filter('excerpt_length', 'oppenfotografi_excerpt_length', 999);
+add_filter('image_send_to_editor', 'oppen_image_send_to_editor', 10, 9);
+
 ?>
