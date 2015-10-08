@@ -958,6 +958,14 @@ footer img {
 		width: 400px;
 	}
 	
+	article #body {
+		padding: 0 10px;
+	}	
+	
+	
+	#page article table tbody tr td {
+		padding: 0 10px;
+	}
 }
 
 
