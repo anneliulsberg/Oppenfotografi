@@ -11,6 +11,12 @@ function oppen_setup() {
     add_theme_support('post-thumbnails');
     set_post_thumbnail_size(386, 386, array('center', 'top'));
     add_image_size('medium-cropped', 400, 400, array('center', 'top'));
+    add_image_size('slideshow-1', 745, 745, array('center', 'top'));
+    add_image_size('slideshow-2', 460, 460, array('center', 'top'));
+    add_image_size('slideshow-3', 280, 285, array('center', 'top'));
+    add_image_size('slideshow-4', 180, 165, array('center', 'top'));
+    add_image_size('slideshow-5', 110, 120, array('center', 'top'));
+    add_image_size('slideshow-6', 70, 120, array('center', 'top'));
 }
 
 function oppen_nav_menu_item_css_class($classes, $item) {
