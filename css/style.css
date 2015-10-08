@@ -941,6 +941,7 @@ footer img {
 	header {
 		width: 320px;
 		text-align: center;
+		padding: 5px 0;
 	}
 	
 	.wrapper {
