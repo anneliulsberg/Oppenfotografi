@@ -2,12 +2,19 @@
 
     <div class="wrapper">
         <ol id="slideshow">
-            <li><a href="/portefolje/kunstfotografi/"><span>Kunstfotografi</span></a></li>
-            <li><a href="/portefolje/portrett/"><span>Portrett</span></a></li>
-            <li><a href="/portefolje/bryllup/"><span>Bryllup</span></a></li>
-            <li><a href="/portefolje/mote/"><span>Mote</span></a></li>
-            <li><a href="/portefolje/bedrift/"><span>Bedrift</span></a></li>
-            <li><a href="/portefolje/akt/"><span>Akt</span></a></li>
+            <?php
+                $portfolio_category = get_category_by_slug('portefolje');
+                $model_category = get_category_by_slug('modellportefolje');
+                $categories = get_categories(array(
+                    'parent' => $portfolio_category->term_id,
+                    'exclude' => $model_category->term_id
+                ));
+            ?>
+            <?php foreach ($categories as $category) : $category_url = get_category_link($category->term_id); ?>
+
+                <li><a href="<?php echo esc_attr($category_url) ?>"><span><?php echo $category->name ?></span></a></li>
+
+            <?php endforeach; ?>
         </ol>
     </div>
 
