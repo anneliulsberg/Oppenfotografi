@@ -952,6 +952,13 @@ footer img {
 		margin-left: -180px;	
 	}	
 	
+	nav ul li a {
+		width: 75px;
+		height: 85px;
+		padding-top: 80px;
+		font-size: 24px;
+	}
+	
 	body.kontakt #page article {
 		width: 300px;
 	}
