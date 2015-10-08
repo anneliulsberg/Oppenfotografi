@@ -938,105 +938,30 @@ footer img {
 
 @media screen and (max-width: 320px) {
 
+	body {
+		width: 400px;
+	}
+	
+	html {
+		width: 400px;
+	}
+	
 	header {
-		width: 320px;
-		text-align: center;
-		padding: 5px 0;
+		width: 400px;
+	}
+
+	wrapper {
+		width: 400px;
 	}
 	
-	.wrapper {
-		width: 320px;
-	}
-	
-	nav {
-		left: 50%;
-		margin-left: -160px;
-		width: 320px;	
-	}	
-	
-	nav ul li a {
-		width: 80px;
-		height: 85px;
-		padding-top: 80px;
-		font-size: 22px;
-	}
-	
-	body.kontakt #page article {
-		width: 300px;
-	}
-	
-	body.kontakt #page article p iframe {
-		width: 300px;
-		height: 300px;
-	}
-	
-	body.pris #page article {
-		width: 300px;
-	}
-	
-	body.pris #page article table td:first-child {
-		width: 200px;
-	}
+	header a {
 		
-	body.modellportefolje.single article, 
-	body.blogg.single article {
-		width: 300px;
 	}
 	
-	#portfolio-menu {
-		width: 300px;
-		margin-bottom: 40px;
+	#page {
+		width: 400px;
 	}
 	
-	#portfolio-menu li {
-		float: none;
-		margin-bottom: 0;
-	}
-	
-	#portfolio-menu li a {
-	    font-size: 24px;
-	    padding-top: 0;
-	    width: 300px;
-	    height: 45px;
-	    background-size: 0 0;
-	}
-	
-	#portfolio-menu li a:hover {
-		background-size: 0 0;
-	}
-	
-	#portfolio-menu li a span {
-		padding-top: 10px;
-		padding-bottom: 15px;
-	}
-		
-	#portfolio-menu .akt a {
-		background-image: none;
-	}
-	
-	#portfolio-menu .kunstfotografi a {
-		background-image: none;
-	}
-	
-	#portfolio-menu .bedrift a {
-		background-image: none;
-	}
-	
-	#portfolio-menu .bryllup a {
-		background-image: none;
-	}
-	
-	#portfolio-menu .mote a {
-		background-image: none;
-	}
-	
-	#portfolio-menu .modellportefolje a {
-		background-image: none;
-	}
-	
-	#portfolio-menu .portrett a {
-		background-image: none;
-	}	
 }
 
 
