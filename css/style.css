@@ -958,6 +958,10 @@ footer img {
 		width: 400px;
 	}
 	
+	#page article {
+		width: 320px;
+	}
+	
 	article #body {
 		padding: 0 10px;
 	}	
