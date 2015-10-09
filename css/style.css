@@ -957,19 +957,25 @@ footer img {
 	#page {
 		width: 400px;
 	}
+		
+	#page article table tbody tr td,	
+	body.kontakt article #body,
+	body.pris article #body, 
+	body.single article #body,
+	body.kontakt article h1, 
+	body.pris article h1,
+	body.single article h1,
+	body.kontakt article h2,
+	body.pris article h2,
+	body.kontakt article p,
+	body.pris article p,
+	body.single #metadata {
+		padding: 0 10px;
+	}	
 	
 	body.kontakt article p:first-of-type {
 		padding: 0;
 	}
-	
-	#page article table tbody tr td,	
-	article #body, 
-	article h1, 
-	article h2,
-	article p,
-	#metadata {
-		padding: 0 10px;
-	}	
 	
 	body.kontakt #page article p iframe {
 		height: 400px;
