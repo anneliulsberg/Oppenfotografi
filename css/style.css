@@ -746,9 +746,13 @@ footer img {
 	#slideshow li:nth-child(2) a {
 		width: 284px;
 		height: 285px;
-		background-size: 284px ;
 		top: 845px;
 		right: 488px;	
+	}
+	
+	#slideshow li:nth-child(2) a img {
+		width: 284px;
+		height: 285px;
 	}
 	
 	#slideshow li:nth-child(3) a {
@@ -852,23 +856,30 @@ footer img {
 	#slideshow li:nth-child(1) a {
 		width: 400px;	
 		height: 400px;
-		background-size: 400px 400px;
 		top: 100px;
 		right: 0px;
+	}
+	
+	#slideshow li:nth-child(1) a img {
+		width: 400px;
+		height: 400px;
 	}
 	
 	#slideshow li:nth-child(2) a {
 		width: 400px;
 		height: 400px;
-		background-size: 400px ;
 		top: 500px;
 		right: 0;	
+	}
+	
+	#slideshow li:nth-child(2) a img {
+		width: 400px;
+		height: 400px;
 	}
 	
 	#slideshow li:nth-child(3) a {
 		width: 220px;
 		height: 285px;
-		background-position: -25px;
 		top: 900px;
 		right: 180px;		
 	}
