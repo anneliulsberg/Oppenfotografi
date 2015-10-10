@@ -31,6 +31,8 @@ $categories = get_categories(array(
                                 on			rel.`object_id`					= post.`ID`
                                 and			rel.`term_taxonomy_id`			= $category->term_id
                             where 			attachment.`post_type` 			= 'attachment'
+                            order by		post.`post_modified`            desc
+                            , 				attachment.`post_modified`      desc
                             limit 			2
                         ";
 
