@@ -493,7 +493,6 @@ body.blogg.single article a {
 	display: none;
 	height: 50px;
 	width: 100%;
-	text-align: right;
 	padding-top: 15px;
 	position: absolute;
 	z-index: 2;
