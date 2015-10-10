@@ -10,7 +10,9 @@ $categories = get_categories(array(
 
     <div class="wrapper">
         <ol id="slideshow">
-            <?php foreach ($categories as $category) : $category_url = get_category_link($category->term_id); ?>
+            <?php for ($i = 0; $i < count($categories); $i++) :
+                $category = $categories[$i];
+                $category_url = get_category_link($category->term_id); ?>
 
                 <li>
                     <a href="<?php echo esc_attr($category_url) ?>">
@@ -34,19 +36,18 @@ $categories = get_categories(array(
 
                         $images = $wpdb->get_results($wpdb->prepare($query));
 
-                        for ($i = 0; $i < count($images); $i++) :
-                            $image = $images[$i];
+                        foreach ($images as $image) :
                             $title = apply_filters('the_title', $image->post_title);
                             $image_size = 'slideshow-' . ($i + 1);
                             $image_data = wp_get_attachment_image_src($image->ID, $image_size); ?>
 
-                            <img src="<?php echo $image_data[0] ?>" width="<?php echo $image_data[1] ?>" height="<?php echo $image_data[2] ?>" alt="<?php echo esc_attr($title) ?>">
+                            <img class="<?php echo $image_size ?>" src="<?php echo $image_data[0] ?>" width="<?php echo $image_data[1] ?>" height="<?php echo $image_data[2] ?>" alt="<?php echo esc_attr($title) ?>">
 
-                        <?php endfor; ?>
+                        <?php endforeach; ?>
                     </a>
                 </li>
 
-            <?php endforeach; ?>
+            <?php endfor; ?>
         </ol>
     </div>
 
