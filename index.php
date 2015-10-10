@@ -31,7 +31,7 @@ $categories = get_categories(array(
                                 on			rel.`object_id`					= post.`ID`
                                 and			rel.`term_taxonomy_id`			= $category->term_id
                             where 			attachment.`post_type` 			= 'attachment'
-                            limit 			4
+                            limit 			2
                         ";
 
                         $images = $wpdb->get_results($wpdb->prepare($query));
