@@ -303,6 +303,12 @@ nav #blogg.active a {
 	background-color: #fe97ff;
 }
 
+body.kunstfotografi.portefolje #media li a,
+body.portrett.portefolje #media li a,
+body.bryllup.portefolje #media li a,
+body.mote.portefolje #media li a,
+body.bedrift.portefolje #media li a,
+body.akt.portefolje #media li a,
 body.modellportefolje article,
 body.blogg article {
 	width: 400px;
@@ -310,6 +316,12 @@ body.blogg article {
 	float: left;	
 }
 
+body.kunstfotografi.portefolje #media li a,
+body.portrett.portefolje #media li a,
+body.bryllup.portefolje #media li a,
+body.mote.portefolje #media li a,
+body.bedrift.portefolje #media li a,
+body.akt.portefolje #media li a,
 body.modellportefolje article a,
 body.blogg article a {
 	width: 400px;
@@ -323,6 +335,15 @@ body.blogg article a {
 	background-position: 0px 0px;
 }
 
+body.kunstfotografi.portefolje #media li a span,
+body.portrett.portefolje #media li a span,
+body.bryllup.portefolje #media li a span,
+body.mote.portefolje #media li a span,
+body.bedrift.portefolje #media li a span,
+body.akt.portefolje #media li a span {
+	display: none;
+}
+
 body.modellportefolje article a span,
 body.blogg article a span {
 	margin-top: 290px;
@@ -332,6 +353,12 @@ body.blogg article a span {
 	display: block;
 }
 
+body.kunstfotografi.portefolje #media li a:hover,
+body.portrett.portefolje #media li a:hover,
+body.bryllup.portefolje #media li a:hover,
+body.mote.portefolje #media li a:hover,
+body.bedrift.portefolje #media li a:hover,
+body.akt.portefolje #media li a:hover,
 body.modellportefolje article a:hover,
 body.blogg article a:hover {
 	background-size: 420px 420px;
