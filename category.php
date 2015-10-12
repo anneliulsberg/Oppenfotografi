@@ -25,10 +25,14 @@ set_query_var('is_model_category', $is_model_category);
 
             <?php
 
-                while (have_posts()) :
-                    the_post();
-                    get_template_part('content');
-                endwhile;
+                if ($is_sub_category && !$is_model_category) :
+                    get_template_part('media');
+                else :
+                    while (have_posts()) :
+                        the_post();
+                        get_template_part('content');
+                    endwhile;
+                endif;
 
             ?>
         </div>
