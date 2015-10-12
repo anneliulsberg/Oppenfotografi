@@ -576,7 +576,7 @@ body.kontakt #page {
 	background-color: #a1d83b;
 }
 
-body.kontakt #page article p:first-of-type {
+body.kontakt #page iframe {
 	float: right;
 	margin-left: 1em;
 }
@@ -854,6 +854,11 @@ footer img {
 	
 	body.kontakt #page article p iframe {
 		width: 400px;
+	}
+	}
+	
+	body.kontakt form input[type=submit]:hover {
+		background-color: #76b600;
 	}
 }
 
