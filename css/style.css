@@ -173,7 +173,7 @@ nav #blogg.active a {
 }
 
 #portfolio-menu .stemning a {
-	background-image: url(../images/fashion.png);
+	background-image: url(../images/stemning.png);
 	filter: grayscale(100%); 
 	-webkit-filter: grayscale(100%);
 }
