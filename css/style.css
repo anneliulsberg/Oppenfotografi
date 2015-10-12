@@ -642,13 +642,13 @@ body.portefolje #page {
 	padding-bottom: 100px;
 }
 
-#media nav {
+#media nav#lightbox {
 	margin-top: 20px;
 	position: relative;
 	height: 40px;
 }
 
-#media .prev a {
+#media nav#lightbox ul li.prev a {
 	position: absolute;
 	left: 55%;
 	width: 50px;
@@ -657,7 +657,7 @@ body.portefolje #page {
 	padding: 0;
 }
 
-#media .next a {
+#media nav#lightbox ul li.next a {
 	position: absolute;
 	left: 95%;
 	width: 50px;
@@ -666,7 +666,7 @@ body.portefolje #page {
 	padding: 0;
 }
 
-#media .close a {
+#media nav#lightbox ul li.close a {
 	position: absolute;
 	left: 75%;
 	width: 50px;
