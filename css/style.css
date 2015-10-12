@@ -600,9 +600,7 @@ body.kontakt form input[type=text]:focus,
 body.kontakt form input[type=email]:focus,
 body.kontakt form textarea:focus {
 	outline: none;
-	border: 10px solid #grey;
 	background-color: #76b600;
-
 }
 
 body.kontakt form input[type=submit] {
