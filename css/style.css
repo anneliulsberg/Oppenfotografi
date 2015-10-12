@@ -585,6 +585,41 @@ body.kontakt #page br.clear {
 	clear: right;
 }
 
+body.kontakt form input,
+body.kontakt form textarea {
+	height: 25px;
+	width: 570px;
+	border: 1px solid #fff;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	-ms-box-shadow: none;
+	box-shadow: none;
+}
+
+body.kontakt form input[type=text]:focus,
+body.kontakt form input[type=email]:focus,
+body.kontakt form textarea:focus {
+	outline: none;
+	border: 10px solid #grey;
+	background-color: #76b600;
+
+}
+
+body.kontakt form input[type=submit] {
+	display: block;
+	width: 575px;
+	height: 50px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;;
+	font-size: 17px;
+	color: #fff;
+}
+
+body.kontakt form input[type=submit]:hover {
+	background-color: #76b600;
+}
+
 body.pris #page {
 	background-color: #84cc00;
 }
@@ -855,6 +890,15 @@ footer img {
 	body.kontakt #page article p iframe {
 		width: 400px;
 	}
+	
+	body.kontakt form input,
+	body.kontakt form textarea {
+		width: 380px;
+	}
+
+	body.kontakt form input[type=submit] {
+		display: block;
+		width: 385px;
 	}
 	
 	body.kontakt form input[type=submit]:hover {
