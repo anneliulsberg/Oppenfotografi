@@ -172,7 +172,7 @@ nav #blogg.active a {
 	-webkit-filter: grayscale(100%);
 }
 
-#portfolio-menu .mote a {
+#portfolio-menu .stemning a {
 	background-image: url(../images/fashion.png);
 	filter: grayscale(100%); 
 	-webkit-filter: grayscale(100%);
@@ -206,7 +206,7 @@ nav #blogg.active a {
 	background-color: #dddddd;
 }
 
-#portfolio-menu .mote a span {
+#portfolio-menu .stemning a span {
 	background-color: #c7c6c6;
 }
 
@@ -250,8 +250,8 @@ nav #blogg.active a {
 	-webkit-filter: grayscale(0%);		
 }
 
-#portfolio-menu .mote a:hover,
-#portfolio-menu .mote.active a  {
+#portfolio-menu .stemning a:hover,
+#portfolio-menu .stemning.active a  {
 	filter: grayscale(0%);
 	-webkit-filter: grayscale(0%);
 }
@@ -288,8 +288,8 @@ nav #blogg.active a {
 	background-color: #e39fc6;
 }
 
-#portfolio-menu .mote a:hover span,
-#portfolio-menu .mote.active a span {
+#portfolio-menu .stemning a:hover span,
+#portfolio-menu .stemning.active a span {
 	background-color: #75adf2;
 }
 
@@ -306,7 +306,7 @@ nav #blogg.active a {
 body.kunstfotografi.portefolje #media li a,
 body.portrett.portefolje #media li a,
 body.bryllup.portefolje #media li a,
-body.mote.portefolje #media li a,
+body.stemning.portefolje #media li a,
 body.bransje.portefolje #media li a,
 body.akt.portefolje #media li a,
 body.modellportefolje article,
@@ -319,7 +319,7 @@ body.blogg article {
 body.kunstfotografi.portefolje #media > li > a,
 body.portrett.portefolje #media > li > a,
 body.bryllup.portefolje #media > li > a,
-body.mote.portefolje #media > li > a,
+body.stemning.portefolje #media > li > a,
 body.bransje.portefolje #media > li > a,
 body.akt.portefolje #media > li > a,
 body.modellportefolje article a,
@@ -338,7 +338,7 @@ body.blogg article a {
 body.kunstfotografi.portefolje #media li a span,
 body.portrett.portefolje #media li a span,
 body.bryllup.portefolje #media li a span,
-body.mote.portefolje #media li a span,
+body.stemning.portefolje #media li a span,
 body.bransje.portefolje #media li a span,
 body.akt.portefolje #media li a span {
 	display: none;
@@ -356,7 +356,7 @@ body.blogg article a span {
 body.kunstfotografi.portefolje #media > li > a:hover,
 body.portrett.portefolje #media > li > a:hover,
 body.bryllup.portefolje #media > li > a:hover,
-body.mote.portefolje #media > li > a:hover,
+body.stemning.portefolje #media > li > a:hover,
 body.bransje.portefolje #media > li > a:hover,
 body.akt.portefolje #media > li > a:hover,
 body.modellportefolje article a:hover,
@@ -1003,7 +1003,7 @@ footer img {
 		background-image: none;
 	}
 	
-	#portfolio-menu .mote a {
+	#portfolio-menu .stemning a {
 		background-image: none;
 	}
 	
