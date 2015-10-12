@@ -19,7 +19,7 @@
         <li>
             <a href="#image-<?php echo $id ?>" style="background-image: url('<?php echo $medium_image_src ?>')"><span><?php echo $title ?></span></a>
             <div id="image-<?php echo $id ?>" class="overlay">
-                <nav>
+                <nav id="lightbox">
                     <ul>
                         <li class="prev"><a href="#image-<?php echo $prev_id ?>" rel="prev <?php echo $first ? 'last' : '' ?>"><span>Forrige</span></a></li>
                         <li class="close"><a href="#page" rel="index"><span>Lukk</span></a></li>
