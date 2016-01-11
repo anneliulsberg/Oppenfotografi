@@ -5,7 +5,7 @@ html::before {
 	height: 40px;
 	background-color: rgba(0, 0, 0, .65);
 	display: block;
-	border-bottom: 2px solid #7f9193;
+	border-bottom: 2px solid #63041a;
 	position: absolute;
 	width: 100%;
 	z-index: 4;
@@ -37,7 +37,7 @@ header a {
 }
 
 header a:hover {
-	color: #7f9193;
+	color: #8c9fa1;
 }
 
 .wrapper {
@@ -89,12 +89,12 @@ nav ul li.active a {
 
 nav #kontakt a:hover, 
 nav #kontakt.active a {
-	background-color: #a1d83b;
+	background-color: #778789;
 }
 
 nav #pris a:hover, 
 nav #pris.active a {
-	background-color: #84cc00;
+	background-color: #6b7a7c;
 }
 
 nav #portefolje a:hover,
@@ -104,7 +104,7 @@ nav #portefolje.active a {
 
 nav #blogg a:hover,
 nav #blogg.active a {
-	background-color: #76b600;
+	background-color: #606e6f;
 }
 
 #portfolio-menu {
@@ -270,12 +270,12 @@ nav #blogg.active a {
 
 #portfolio-menu .akt a:hover span,
 #portfolio-menu .akt.active a span {
-	background-color: #b088ec;
+	background-color: #dfafa1;
 }
 
 #portfolio-menu .kunstfotografi a:hover span,
 #portfolio-menu .kunstfotografi.active a span {
-	background-color: #ffe827;
+	background-color: #63041a;
 }
 
 #portfolio-menu .bransje a:hover span,
@@ -285,22 +285,22 @@ nav #blogg.active a {
 
 #portfolio-menu .bryllup a:hover span,
 #portfolio-menu .bryllup.active a span {
-	background-color: #e39fc6;
+	background-color: #b2acce;
 }
 
 #portfolio-menu .stemning a:hover span,
 #portfolio-menu .stemning.active a span {
-	background-color: #75adf2;
+	background-color: #245e72;
 }
 
 #portfolio-menu .modellportefolje a:hover span,
 #portfolio-menu .modellportefolje.active a span {
-	background-color: #ff4d4d;
+	background-color: #ffe827;
 }
 
 #portfolio-menu .portrett a:hover span,
 #portfolio-menu .portrett.active a span {
-	background-color: #fe97ff;
+	background-color: #7f9193;
 }
 
 body.kunstfotografi.portefolje #media li a,
@@ -366,12 +366,12 @@ body.blogg article a:hover {
 }
 
 body.modellportefolje article a:hover span {
-	background-color: #ff4d4d;
+	background-color: #ffe827;
 	color: #fff;
 }
 
 body.blogg article a:hover span {
-	background-color: #5f9200;
+	background-color: #4f5a5b;
 	color: #fff;
 }
 
@@ -531,22 +531,22 @@ body.blogg.single article a {
 }
 
 #slideshow li:nth-child(1) a span {
-	background-color: #ffe827;
+	background-color: #63041a;
 	margin-top: 630px;
 }
 
 #slideshow li:nth-child(2) a span {
-	background-color: #88e169;
+	background-color: #7f9193;
 	margin-top: 350px;
 }
 
 #slideshow li:nth-child(3) a span {
-	background-color: #44dedc;
+	background-color: #b2acce;
 	margin-top: 170px;
 }
 
 #slideshow li:nth-child(4) a span {
-	background-color: #75adf2;
+	background-color: #245e72;
 	margin-top: 50px;
 }
 
@@ -556,12 +556,12 @@ body.blogg.single article a {
 }
 
 #slideshow li:nth-child(6) a span {
-	background-color: #b088ec;
+	background-color: #dfafa1;
 	margin-top: 35px;
 }
 
 #page {
-	background-color: #a1d83b;
+	background-color: #778789;
 	margin: 107px 0 141px 0;
 	padding: 60px 0;
 }
@@ -573,7 +573,7 @@ body.blogg.single article a {
 }
 
 body.kontakt #page {
-	background-color: #a1d83b;
+	background-color: #778789;
 }
 
 body.kontakt #page iframe {
@@ -600,7 +600,7 @@ body.kontakt form input[type=text]:focus,
 body.kontakt form input[type=email]:focus,
 body.kontakt form textarea:focus {
 	outline: none;
-	background-color: #76b600;
+	background-color: #8c9fa1;
 }
 
 body.kontakt form input[type=submit] {
@@ -615,11 +615,11 @@ body.kontakt form input[type=submit] {
 }
 
 body.kontakt form input[type=submit]:hover {
-	background-color: #76b600;
+	background-color: #8c9fa1;
 }
 
 body.pris #page {
-	background-color: #84cc00;
+	background-color: #6b7a7c;
 }
 
 body.pris #page article table td:first-child {
@@ -641,7 +641,7 @@ body.pris table {
 }
 
 body.blogg #page {
-	background-color: #76b600;
+	background-color: #606e6f;
 } 
 
 body.portefolje #page {
@@ -763,7 +763,7 @@ footer {
 	text-align: center;	
 	color: #fff;
 	padding-top: 10px;
-	border-top: 2px solid #ff9e5d;
+	border-top: 2px solid #63041a;
 }
 
 footer a {
@@ -772,7 +772,7 @@ footer a {
 }
 
 footer a:hover {
-	color: #a1d83b;
+	color: #8c9fa1;
 }
 
 footer img {
