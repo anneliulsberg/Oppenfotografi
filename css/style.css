@@ -650,7 +650,8 @@ body.blogg #page {
 } 
 
 body.portefolje #page {
-	background-color: #2f2f2f;	
+	background-color: #2f2f2f;
+	min-height: 60vh;	
 }
 
 #media .overlay {
