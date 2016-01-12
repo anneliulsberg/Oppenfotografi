@@ -46,6 +46,11 @@ header a:hover {
 	position: relative;
 }
 
+.wrapper .category-description {
+	color: #fff;
+	margin-bottom: 40px;
+}
+
 nav {
 	width: 360px;
 	margin: 0 auto;

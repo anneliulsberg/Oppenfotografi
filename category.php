@@ -22,7 +22,8 @@ set_query_var('is_model_category', $is_model_category);
             <?php get_template_part('portfolio-menu'); ?>
 
             <h1 class="category-name"><?php echo $current_category->name ?></h1>
-
+			<p class="category-description">In hac habitasse platea dictumst. Sed quam quam, fringilla in justo nec, tempor feugiat nisi. Aliquam id ligula ut purus bibendum dictum. Suspendisse id leo malesuada, laoreet neque non, vehicula tortor. Donec turpis erat, feugiat a libero ut, scelerisque mattis quam. Sed ut euismod nunc, vitae sagittis sapien. Etiam finibus sem leo, in aliquam quam condimentum vel. Integer nisi ligula, lacinia nec nibh fermentum, tincidunt rutrum nulla. Mauris luctus est mauris, et placerat risus luctus eget. Maecenas quis commodo sem. Nullam ut euismod lacus. Quisque molestie elit sollicitudin elementum condimentum. Maecenas a urna lectus. Nullam eget iaculis odio. Donec in lacinia nibh. Integer tincidunt venenatis ante, quis suscipit purus elementum at.</p>
+			
             <?php
 
                 if ($is_sub_category && !$is_model_category) :
