@@ -66,7 +66,7 @@ nav ul li a {
 	text-decoration: none;
 }
 
-nav #kontakt a {
+nav #om a {
 	background-color: #e0e0e0;
 }
 
@@ -87,8 +87,8 @@ nav ul li.active a {
 	color: #fff;
 }
 
-nav #kontakt a:hover, 
-nav #kontakt.active a {
+nav #om a:hover, 
+nav #om.active a {
 	background-color: #778789;
 }
 
@@ -572,21 +572,21 @@ body.blogg.single article a {
 	display: block;
 }
 
-body.kontakt #page {
+body.om #page {
 	background-color: #778789;
 }
 
-body.kontakt #page iframe {
+body.om #page iframe {
 	float: right;
 	margin-left: 1em;
 }
 
-body.kontakt #page br.clear {
+body.om #page br.clear {
 	clear: right;
 }
 
-body.kontakt form input,
-body.kontakt form textarea {
+body.om form input,
+body.om form textarea {
 	height: 25px;
 	width: 570px;
 	border: 1px solid #fff;
@@ -596,14 +596,14 @@ body.kontakt form textarea {
 	box-shadow: none;
 }
 
-body.kontakt form input[type=text]:focus,
-body.kontakt form input[type=email]:focus,
-body.kontakt form textarea:focus {
+body.om form input[type=text]:focus,
+body.om form input[type=email]:focus,
+body.om form textarea:focus {
 	outline: none;
 	background-color: #8c9fa1;
 }
 
-body.kontakt form input[type=submit] {
+body.om form input[type=submit] {
 	display: block;
 	width: 575px;
 	height: 50px;
@@ -614,7 +614,7 @@ body.kontakt form input[type=submit] {
 	color: #fff;
 }
 
-body.kontakt form input[type=submit]:hover {
+body.om form input[type=submit]:hover {
 	background-color: #8c9fa1;
 }
 
@@ -881,25 +881,25 @@ footer img {
 		width: 700px;
 	}
 		
-	body.kontakt #page article {
+	body.om #page article {
 		width: 800px;
 	}
 	
-	body.kontakt #page article p iframe {
+	body.om #page article p iframe {
 		width: 400px;
 	}
 	
-	body.kontakt form input,
-	body.kontakt form textarea {
+	body.om form input,
+	body.om form textarea {
 		width: 380px;
 	}
 
-	body.kontakt form input[type=submit] {
+	body.om form input[type=submit] {
 		display: block;
 		width: 385px;
 	}
 	
-	body.kontakt form input[type=submit]:hover {
+	body.om form input[type=submit]:hover {
 		background-color: #76b600;
 	}
 }
@@ -986,11 +986,11 @@ footer img {
 		margin-top: 285px;
 	}
 	
-	body.kontakt #page article {
+	body.om #page article {
 		width: 400px;
 	}
 	
-	body.kontakt #page article p iframe {
+	body.om #page article p iframe {
 		width: 400px;
 	}
 	
@@ -1088,25 +1088,25 @@ footer img {
 	}
 		
 	#page article table tbody tr td,	
-	body.kontakt article #body,
+	body.om article #body,
 	body.pris article #body, 
 	body.single article #body,
-	body.kontakt article h1, 
+	body.om article h1, 
 	body.pris article h1,
 	body.single article h1,
-	body.kontakt article h2,
+	body.om article h2,
 	body.pris article h2,
-	body.kontakt article p,
+	body.om article p,
 	body.pris article p,
 	body.single #metadata {
 		padding: 0 10px;
 	}	
 	
-	body.kontakt article p:first-of-type {
+	body.om article p:first-of-type {
 		padding: 0;
 	}
 	
-	body.kontakt #page article p iframe {
+	body.om #page article p iframe {
 		height: 400px;
 	}
 	
