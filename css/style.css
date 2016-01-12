@@ -96,12 +96,12 @@ nav ul li.active a {
 
 nav #om a:hover, 
 nav #om.active a {
-	background-color: #778789;
+	background-color: #6b7a7c;
 }
 
 nav #pris a:hover, 
 nav #pris.active a {
-	background-color: #6b7a7c;
+	background-color: #778789;
 }
 
 nav #portefolje a:hover,
@@ -580,7 +580,7 @@ body.blogg.single article a {
 }
 
 body.om #page {
-	background-color: #778789;
+	background-color: #6b7a7c;
 }
 
 body.om #page iframe {
@@ -626,7 +626,7 @@ body.om form input[type=submit]:hover {
 }
 
 body.pris #page {
-	background-color: #6b7a7c;
+	background-color: #778789;
 }
 
 body.pris #page article table td:first-child {
