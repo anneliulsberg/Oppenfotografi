@@ -49,6 +49,8 @@ header a:hover {
 .wrapper .category-description {
 	color: #fff;
 	margin-bottom: 40px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 17px;
 }
 
 nav {
@@ -743,6 +745,8 @@ article a:hover {
 
 article #body {
 	margin-bottom: 20px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 17px;
 }
 
 article ul#media li a {
