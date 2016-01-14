@@ -1070,7 +1070,7 @@ footer img {
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
 
 	body {
 		width: 400px;
