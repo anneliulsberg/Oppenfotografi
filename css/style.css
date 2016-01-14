@@ -910,7 +910,7 @@ footer img {
 		margin-bottom: 20px;
 	}
 	
-	body.home #page .wrapper article:last-of-type {
+	body.home #page .wrapper article:nth-of-type(3) {
 		display: none;
 	}
 	
@@ -1021,7 +1021,7 @@ footer img {
 		width: 400px;
 	}
 	
-	body.home #page .wrapper article:last-of-type {
+	body.home #page .wrapper article:nth-of-type(3) {
 		display: block;
 	}
 	
