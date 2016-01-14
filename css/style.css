@@ -1107,12 +1107,17 @@ footer img {
 		padding: 0 10px;
 	}	
 	
+	body.om h1 {
+		margin-bottom: 20px;
+	}
+	
 	body.om article > p:first-of-type {
 		padding: 0;
 	}
 	
 	body.om #page article p iframe {
 		height: 400px;
+		margin-bottom: 20px;
 	}
 	
 	body.pris #page article table td:first-child {
