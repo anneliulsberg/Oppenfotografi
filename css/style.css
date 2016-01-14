@@ -1107,7 +1107,7 @@ footer img {
 		padding: 0 10px;
 	}	
 	
-	body.om article p:first-of-type {
+	body.om article > p:first-of-type {
 		padding: 0;
 	}
 	
