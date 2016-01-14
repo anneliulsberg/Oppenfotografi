@@ -906,6 +906,10 @@ footer img {
 		margin-bottom: 20px;
 	}
 	
+	body.home #page .wrapper article:last-of-type {
+		display: none;
+	}
+	
 	body.om form input,
 	body.om form textarea {
 		width: 380px;
@@ -1011,6 +1015,10 @@ footer img {
 	
 	body.pris #page article {
 		width: 400px;
+	}
+	
+	body.home #page .wrapper article:last-of-type {
+		display: block;
 	}
 	
 	body.pris #page article table td:first-child {
