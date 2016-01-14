@@ -413,6 +413,7 @@ body.blogg.single article a {
 #slideshow {
 	position: relative;
 	height: 745px;
+	margin-bottom: 60px;
 }
 
 #slideshow li a {
