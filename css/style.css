@@ -822,6 +822,10 @@ footer img {
 		height: 745px;
 		right: 27px;
 	}
+		
+	#slideshow li:nth-child(1) a img {
+		width: 745px;
+	}
 	
 	#slideshow li:nth-child(2) a {
 		width: 284px;
