@@ -685,9 +685,14 @@ body.portefolje #page {
 }
 
 #media nav#lightbox {
-	margin-top: 20px;
 	position: relative;
 	height: 40px;
+	width: 320px;
+	margin: 0 auto;
+}
+
+#media nav#lightbox ul li a {
+	margin-top: -25px;
 }
 
 #media nav#lightbox ul li.prev a {
