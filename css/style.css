@@ -53,7 +53,7 @@ header a:hover {
 	font-size: 17px;
 }
 
-.wrapper nav {
+.wrapper > nav {
 	width: 360px;
 	margin: 0 auto;
 	position: absolute;
@@ -62,7 +62,7 @@ header a:hover {
 	right: 120px;
 }
 
-.wrapper nav ul li a {
+.wrapper > nav ul li a {
 	float: left;
 	text-align: center;
 	width: 90px;
@@ -73,44 +73,44 @@ header a:hover {
 	text-decoration: none;
 }
 
-.wrapper nav #om a {
+.wrapper > nav #om a {
 	background-color: #e0e0e0;
 }
 
-.wrapper nav #pris a {
+.wrapper > nav #pris a {
 	background-color: #f4f4f4;
 }
 
-.wrapper nav #portefolje a {
+.wrapper > nav #portefolje a {
 	background-color: #a9a8a7;
 }
 
-.wrapper nav #blogg a {
+.wrapper > nav #blogg a {
 	background-color: #dddcdc;
 }
 
-.wrapper nav ul li a:hover,
-.wrapper nav ul li.active a {
+.wrapper > nav ul li a:hover,
+.wrapper > nav ul li.active a {
 	color: #fff;
 }
 
-.wrapper nav #om a:hover, 
-.wrapper nav #om.active a {
+.wrapper > nav #om a:hover, 
+.wrapper > nav #om.active a {
 	background-color: #6b7a7c;
 }
 
-.wrapper nav #pris a:hover, 
-.wrapper nav #pris.active a {
+.wrapper > nav #pris a:hover, 
+.wrapper > nav #pris.active a {
 	background-color: #778789;
 }
 
-.wrapper nav #portefolje a:hover,
-.wrapper nav #portefolje.active a {
+.wrapper > nav #portefolje a:hover,
+.wrapper > nav #portefolje.active a {
 	background-color: #2f2f2f;
 }
 
-.wrapper nav #blogg a:hover,
-.wrapper nav #blogg.active a {
+.wrapper > nav #blogg a:hover,
+.wrapper > nav #blogg.active a {
 	background-color: #606e6f;
 }
 
@@ -924,7 +924,7 @@ footer img {
 		width: 400px;
 	}
 	
-	.wrapper nav {
+	.wrapper > nav {
 		left: 50%;
 		margin-left: -180px;	
 	}	
