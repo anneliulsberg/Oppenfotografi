@@ -25,7 +25,7 @@ set_query_var('is_model_category', $is_model_category);
             <h1 class="category-name"><?php echo $current_category->name ?></h1>
 
             <?php if ($category_description) : ?>
-                <p class="category-description"><?php echo $category_description ?></p>
+                <div class="category-description"><?php echo $category_description ?></div>
             <?php endif; ?>
 
             <?php
