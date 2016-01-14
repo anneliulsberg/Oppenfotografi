@@ -406,8 +406,6 @@ body.blogg.single article a {
 
 #slideshow {
 	position: relative;
-	top: 104;
-	right: 0;
 	height: 945px;
 }
 
@@ -432,42 +430,40 @@ body.blogg.single article a {
 #slideshow li:nth-child(1) a {
 	width: 745px;
 	height: 745px;
-	top: 100px;
 	right: 0;
 }
 
 #slideshow li:nth-child(2) a {
 	width: 460px;
 	height: 460px;
-	top: 100px;
 	right: 745px;	
 }
 
 #slideshow li:nth-child(3) a {
 	width: 280px;
 	height: 285px;
-	top: 560px;
+	top: 460px;
 	right: 925px;		
 }
 
 #slideshow li:nth-child(4) a {
 	width: 180px;
 	height: 165px;
-	top: 680px;
+	top: 580px;
 	right: 745px;	
 }
 
 #slideshow li:nth-child(5) a {
 	width: 110px;
 	height: 120px;
-	top: 560px;
+	top: 460px;
 	right: 745px;	
 }
 
 #slideshow li:nth-child(6) a {
 	width: 70px;
 	height: 120px;
-	top: 560px;
+	top: 460px;
 	right: 855px;	
 }
 
@@ -807,22 +803,19 @@ footer img {
 	}
 	
 	#slideshow {
-		top: 104;
-		right: 0;
 		height: 1230px;
 	}
 	
 	#slideshow li:nth-child(1) a {
 		width: 745px;
 		height: 745px;
-		top: 100px;
 		right: 27px;
 	}
 	
 	#slideshow li:nth-child(2) a {
 		width: 284px;
 		height: 285px;
-		top: 845px;
+		top: 745px;
 		right: 488px;	
 	}
 	
@@ -834,28 +827,28 @@ footer img {
 	#slideshow li:nth-child(3) a {
 		width: 280px;
 		height: 285px;
-		top: 845px;
+		top: 745px;
 		right: 208px;		
 	}
 	
 	#slideshow li:nth-child(4) a {
 		width: 180px;
 		height: 165px;
-		top: 965px;
+		top: 865px;
 		right: 28px;	
 	}
 	
 	#slideshow li:nth-child(5) a {
 		width: 110px;
 		height: 120px;
-		top: 845px;
+		top: 745px;
 		right: 28px;	
 	}
 	
 	#slideshow li:nth-child(6) a {
 		width: 70px;
 		height: 120px;
-		top: 845px;
+		top: 745px;
 		right: 138px;	
 	}
 	
@@ -936,15 +929,12 @@ footer img {
 	}	
 	
 	#slideshow {
-		top: 104;
-		right: 0;
 		height: 1285px;
 	}
 	
 	#slideshow li:nth-child(1) a {
 		width: 400px;	
 		height: 400px;
-		top: 100px;
 		right: 0px;
 	}
 	
@@ -956,7 +946,7 @@ footer img {
 	#slideshow li:nth-child(2) a {
 		width: 400px;
 		height: 400px;
-		top: 500px;
+		top: 400px;
 		right: 0;	
 	}
 	
@@ -968,28 +958,28 @@ footer img {
 	#slideshow li:nth-child(3) a {
 		width: 220px;
 		height: 285px;
-		top: 900px;
+		top: 800px;
 		right: 180px;		
 	}
 	
 	#slideshow li:nth-child(4) a {
 		width: 180px;
 		height: 165px;
-		top: 1020px;
+		top: 920px;
 		right: 0;	
 	}
 	
 	#slideshow li:nth-child(5) a {
 		width: 110px;
 		height: 120px;
-		top: 900px;
+		top: 800px;
 		right: 0;	
 	}
 	
 	#slideshow li:nth-child(6) a {
 		width: 70px;
 		height: 120px;
-		top: 900px;
+		top: 800px;
 		right: 110px;	
 	}
 	
