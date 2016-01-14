@@ -1127,6 +1127,15 @@ footer img {
 		width: 265px;
 	}
 	
+	body.om form input,
+	body.om form textarea {
+		width: 368px;
+	}
+	
+	body.om form input[type=submit] {
+		width: 368px;
+	}
+	
 }
 
 
