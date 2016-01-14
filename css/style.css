@@ -907,9 +907,6 @@ footer img {
 		width: 385px;
 	}
 	
-	body.om form input[type=submit]:hover {
-		background-color: #76b600;
-	}
 }
 
 @media screen and (max-width: 800px) {
