@@ -184,8 +184,8 @@ header a:hover {
 	-webkit-filter: grayscale(100%);
 }
 
-#portfolio-menu .modellportefolje a {
-	background-image: url(../images/modellportefolje.png);
+#portfolio-menu .kundeportefolje a {
+	background-image: url(../images/kundeportefolje.png);
 	filter: grayscale(100%); 
 	-webkit-filter: grayscale(100%);
 }
@@ -216,7 +216,7 @@ header a:hover {
 	background-color: #c7c6c6;
 }
 
-#portfolio-menu .modellportefolje a span {
+#portfolio-menu .kundeportefolje a span {
 	background-color: #b4b4b4;
 }
 
@@ -262,8 +262,8 @@ header a:hover {
 	-webkit-filter: grayscale(0%);
 }
 
-#portfolio-menu .modellportefolje a:hover,
-#portfolio-menu .modellportefolje.active a {
+#portfolio-menu .kundeportefolje a:hover,
+#portfolio-menu .kundeportefolje.active a {
 	filter: grayscale(0%);
 	-webkit-filter: grayscale(0%);
 }
@@ -299,8 +299,8 @@ header a:hover {
 	background-color: #245e72;
 }
 
-#portfolio-menu .modellportefolje a:hover span,
-#portfolio-menu .modellportefolje.active a span {
+#portfolio-menu .kundeportefolje a:hover span,
+#portfolio-menu .kundeportefolje.active a span {
 	background-color: #ffe827;
 }
 
@@ -315,7 +315,7 @@ body.bryllup.portefolje #media li a,
 body.stemning.portefolje #media li a,
 body.bransje.portefolje #media li a,
 body.akt.portefolje #media li a,
-body.modellportefolje article,
+body.kundeportefolje article,
 body.blogg article {
 	width: 400px;
 	height: 400px;
@@ -328,7 +328,7 @@ body.bryllup.portefolje #media > li > a,
 body.stemning.portefolje #media > li > a,
 body.bransje.portefolje #media > li > a,
 body.akt.portefolje #media > li > a,
-body.modellportefolje article a,
+body.kundeportefolje article a,
 body.blogg article a {
 	width: 400px;
 	height: 400px;
@@ -350,7 +350,7 @@ body.akt.portefolje #media li a span {
 	display: none;
 }
 
-body.modellportefolje article a span,
+body.kundeportefolje article a span,
 body.blogg article a span {
 	margin-top: 290px;
 	padding-top: 20px;
@@ -365,12 +365,12 @@ body.bryllup.portefolje #media > li > a:hover,
 body.stemning.portefolje #media > li > a:hover,
 body.bransje.portefolje #media > li > a:hover,
 body.akt.portefolje #media > li > a:hover,
-body.modellportefolje article a:hover,
+body.kundeportefolje article a:hover,
 body.blogg article a:hover {
 	background-size: 420px 420px;
 }
 
-body.modellportefolje article a:hover span {
+body.kundeportefolje article a:hover span {
 	background-color: #ffe827;
 	color: #fff;
 }
@@ -384,11 +384,11 @@ body.blogg article a time {
 	font-size: 14px;
 }
 
-body.modellportefolje.single #page {
+body.kundeportefolje.single #page {
 	background-color: #2f2f2f;	
 }
 
-body.modellportefolje.single article,
+body.kundeportefolje.single article,
 body.blogg.single article {
 	height: 100%;
 	width: 1200px;
@@ -396,7 +396,7 @@ body.blogg.single article {
 	float: none;
 }
 
-body.modellportefolje.single article a,
+body.kundeportefolje.single article a,
 body.blogg.single article a {
 	height: 100%;
 	width: 1200px;
@@ -864,7 +864,7 @@ footer img {
 		margin-top: 170px;
 	}
 	
-	body.modellportefolje.single article, 
+	body.kundeportefolje.single article, 
 	body.blogg.single article {
 		width: 800px;
 	}
@@ -1021,7 +1021,7 @@ footer img {
 		width: 300px;
 	}
 		
-	body.modellportefolje.single article, 
+	body.kundeportefolje.single article, 
 	body.blogg.single article {
 		width: 400px;
 	}
@@ -1073,7 +1073,7 @@ footer img {
 		background-image: none;
 	}
 	
-	#portfolio-menu .modellportefolje a {
+	#portfolio-menu .kundeportefolje a {
 		background-image: none;
 	}
 	

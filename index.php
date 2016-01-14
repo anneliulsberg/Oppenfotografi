@@ -1,6 +1,6 @@
 <?php
 $portfolio_category = get_category_by_slug('portefolje');
-$model_category = get_category_by_slug('modellportefolje');
+$model_category = get_category_by_slug('kundeportefolje');
 $categories = get_categories(array(
     'parent' => $portfolio_category->term_id,
     'exclude' => $model_category->term_id
