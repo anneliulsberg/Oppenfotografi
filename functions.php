@@ -143,6 +143,15 @@ function oppen_image_send_to_editor($html, $id, $caption, $title, $align, $url) 
     return $html;
 }
 
+function oppen_set_index_category_to_blog($query) {
+    if ($query->is_home() && $query->is_main_query()) {
+        $query->set('is_category_blog', true);
+        $query->set('category_name', 'blogg');
+        $query->set('showposts', 3);
+    }
+}
+
+add_action('pre_get_posts', 'oppen_set_index_category_to_blog');
 add_action('after_setup_theme', 'oppen_setup');
 add_filter('body_class', 'oppen_body_class', 10, 2);
 add_filter('nav_menu_item_id', 'oppen_nav_menu_item_id', 10, 2);
