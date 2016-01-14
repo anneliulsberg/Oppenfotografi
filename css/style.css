@@ -412,7 +412,7 @@ body.blogg.single article a {
 
 #slideshow {
 	position: relative;
-	height: 945px;
+	height: 745px;
 }
 
 #slideshow li a {
@@ -809,7 +809,7 @@ footer img {
 	}
 	
 	#slideshow {
-		height: 1230px;
+		height: 1030px;
 	}
 	
 	#slideshow li:nth-child(1) a {
@@ -934,7 +934,7 @@ footer img {
 	}	
 	
 	#slideshow {
-		height: 1285px;
+		height: 1085px;
 	}
 	
 	#slideshow li:nth-child(1) a {
