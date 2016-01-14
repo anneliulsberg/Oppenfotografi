@@ -898,6 +898,7 @@ footer img {
 	
 	body.om #page article p iframe {
 		width: 400px;
+		margin-bottom: 20px;
 	}
 	
 	body.om form input,
@@ -992,6 +993,10 @@ footer img {
 	
 	#slideshow li:nth-child(2) a span {
 		margin-top: 285px;
+	}
+	
+	body.om h1 {
+		margin-bottom: 20px;
 	}
 	
 	body.om #page article {
@@ -1109,18 +1114,13 @@ footer img {
 	body.single #metadata {
 		padding: 0 10px;
 	}	
-	
-	body.om h1 {
-		margin-bottom: 20px;
-	}
-	
+
 	body.om article > p:first-of-type {
 		padding: 0;
 	}
 	
 	body.om #page article p iframe {
 		height: 400px;
-		margin-bottom: 20px;
 	}
 	
 	body.pris #page article table td:first-child {
