@@ -1091,6 +1091,10 @@ footer img {
 		width: 400px;
 	}
 	
+	.wrapper .category-description {
+		padding: 0 10px;
+	}
+	
 	#page {
 		width: 400px;
 	}
