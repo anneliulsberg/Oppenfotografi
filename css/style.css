@@ -140,7 +140,6 @@ nav #blogg.active a {
 
 #portfolio-menu li a:hover {
 	background-size: 181px 181px;
-	background-position: -2px -2px;
 }
 
 #portfolio-menu li a span {
@@ -369,7 +368,6 @@ body.akt.portefolje #media > li > a:hover,
 body.modellportefolje article a:hover,
 body.blogg article a:hover {
 	background-size: 420px 420px;
-	background-position: -10px -10px;
 }
 
 body.modellportefolje article a:hover span {
