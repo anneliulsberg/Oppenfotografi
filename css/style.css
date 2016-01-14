@@ -316,7 +316,8 @@ body.stemning.portefolje #media li a,
 body.bransje.portefolje #media li a,
 body.akt.portefolje #media li a,
 body.kundeportefolje article,
-body.blogg article {
+body.blogg article,
+body.home article {
 	width: 400px;
 	height: 400px;
 	float: left;	
@@ -329,7 +330,8 @@ body.stemning.portefolje #media > li > a,
 body.bransje.portefolje #media > li > a,
 body.akt.portefolje #media > li > a,
 body.kundeportefolje article a,
-body.blogg article a {
+body.blogg article a,
+body.home article a {
 	width: 400px;
 	height: 400px;
 	display: inline-block;
@@ -351,7 +353,8 @@ body.akt.portefolje #media li a span {
 }
 
 body.kundeportefolje article a span,
-body.blogg article a span {
+body.blogg article a span,
+body.home article a span {
 	margin-top: 290px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -366,7 +369,8 @@ body.stemning.portefolje #media > li > a:hover,
 body.bransje.portefolje #media > li > a:hover,
 body.akt.portefolje #media > li > a:hover,
 body.kundeportefolje article a:hover,
-body.blogg article a:hover {
+body.blogg article a:hover,
+body.home article a:hover {
 	background-size: 420px 420px;
 }
 
@@ -375,12 +379,14 @@ body.kundeportefolje article a:hover span {
 	color: #fff;
 }
 
-body.blogg article a:hover span {
+body.blogg article a:hover span,
+body.home article a:hover span {
 	background-color: #4f5a5b;
 	color: #fff;
 }
 
-body.blogg article a time {
+body.blogg article a time,
+body.home article a time {
 	font-size: 14px;
 }
 
