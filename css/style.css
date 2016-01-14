@@ -650,6 +650,7 @@ body.pris table {
 
 body.blogg #page {
 	background-color: #606e6f;
+	min-height: 60vh;
 } 
 
 body.portefolje #page {
