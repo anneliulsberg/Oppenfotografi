@@ -435,9 +435,13 @@ body.blogg.single article a {
 }
 
 #slideshow li:nth-child(1) a {
-	width: 745px;
+	width: 740px;
 	height: 745px;
 	right: 0;
+}
+
+#slideshow li:nth-child(1) a img {
+	width: 740px;
 }
 
 #slideshow li:nth-child(2) a {
