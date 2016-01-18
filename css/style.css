@@ -597,6 +597,10 @@ body.om #page br.clear {
 	clear: right;
 }
 
+body.om form {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
 body.om form input,
 body.om form textarea {
 	height: 25px;
@@ -624,7 +628,6 @@ body.om form input[type=submit] {
 	height: 50px;
 	background-color: transparent;
 	border: 1px solid #fff;
-	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;;
 	font-size: 17px;
 	color: #fff;
 }
