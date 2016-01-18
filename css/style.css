@@ -616,6 +616,10 @@ body.om form textarea {
 	box-sizing: border-box;
 }
 
+body.om form textarea {
+	height: 75px;
+}
+
 body.om form input[type=text]:focus,
 body.om form input[type=email]:focus,
 body.om form textarea:focus {
