@@ -650,6 +650,7 @@ body.om form .wpcf7-not-valid-tip {
 }
 
 body.om form .wpcf7-validation-errors {
+	background-color: #454f50;
 	border-color: #454f50;
 	margin: 0 0 20px 0;
 	width: 555px;
