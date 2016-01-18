@@ -611,8 +611,8 @@ body.om form textarea {
 	-webkit-box-shadow: none;
 	-ms-box-shadow: none;
 	box-shadow: none;
-	-webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-	-moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
