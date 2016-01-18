@@ -641,6 +641,21 @@ body.om form input[type=submit]:hover {
 	background-color: #8c9fa1;
 }
 
+body.om form .wpcf7-not-valid {
+	background-color: #454f50;
+}
+
+body.om form .wpcf7-not-valid-tip {
+	color: #fff;
+}
+
+body.om form .wpcf7-validation-errors {
+	border-color: #454f50;
+	margin: 0 0 20px 0;
+	width: 555px;
+	padding: 10px 10px;
+}
+
 body.pris #page {
 	background-color: #778789;
 }
