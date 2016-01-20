@@ -53,6 +53,10 @@ header a:hover {
 	font-size: 17px;
 }
 
+.wrapper .category-description p {
+	margin-bottom: 17px;
+}
+
 .wrapper > nav {
 	width: 360px;
 	margin: 0 auto;
