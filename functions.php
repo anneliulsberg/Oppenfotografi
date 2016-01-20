@@ -24,6 +24,8 @@ function oppen_setup() {
     add_image_size('slideshow-4', 180, 165, array('center', 'top'));
     add_image_size('slideshow-5', 110, 120, array('center', 'top'));
     add_image_size('slideshow-6', 70, 120, array('center', 'top'));
+
+    wp_register_script('main', get_bloginfo('template_url') . '/js/main.js', array('jquery'));
 }
 
 function oppen_nav_menu_item_css_class($classes, $item) {
