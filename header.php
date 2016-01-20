@@ -11,6 +11,7 @@
     <?php wp_head(); ?>
     <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="<?php echo $t_uri ?>/js/main.js"></script>
+    <?php include_once("googleanalytics.php") ?>
 </head>
 
 <body <?php body_class(); ?>>
