@@ -152,9 +152,16 @@ function oppen_pre_get_posts($query) {
         return;
     }
 
-    // If we're on the blog category page, increase the post limit to 90 posts
+    // If we're on the blog category page, increase the post
+    // limit to 90 posts and order descending by date.
     if (!$query->is_home() && $query->is_category('blogg')) {
         $query->set('showposts', 90);
+        $query->set('orderby', 'date');
+        $query->set('order', 'desc');
+    } else {
+        // Otherwise, order ascending by title
+        $query->set('orderby', 'title');
+        $query->set('order', 'asc');
     }
 }
 

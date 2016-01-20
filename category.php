@@ -7,8 +7,6 @@ $category_description = $current_category ? trim(category_description($current_c
 $is_category_blog = $current_category && $current_category->slug == 'blogg';
 $is_model_category = $current_category && $current_category->slug == 'kundeportefolje';
 $is_sub_category = count($current_categories) > 1;
-$orderby = $is_category_blog ? '&orderby=date&order=desc' : '&orderby=title&order=asc';
-query_posts($query_string . $orderby);
 
 set_query_var('current_categories', $current_categories);
 set_query_var('is_category_blog', $is_category_blog);
