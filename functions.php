@@ -8,6 +8,13 @@ function oppen_setup() {
         'primary' => 'Hovedmeny'
     ));
 
+    add_theme_support('infinite-scroll', array(
+        'container' => 'wrapper',
+        'footer' => 'footer',
+        'wrapper' => false,
+        'posts_per_page' => 9,
+    ));
+
     add_theme_support('post-thumbnails');
     set_post_thumbnail_size(386, 386, array('center', 'top'));
     add_image_size('medium-cropped', 400, 400, array('center', 'top'));
@@ -155,7 +162,7 @@ function oppen_pre_get_posts($query) {
     // If we're on the blog category page, increase the post
     // limit to 90 posts and order descending by date.
     if (!$query->is_home() && $query->is_category('blogg')) {
-        $query->set('showposts', 90);
+        $query->set('showposts', 9);
         $query->set('orderby', 'date');
         $query->set('order', 'desc');
     } else {

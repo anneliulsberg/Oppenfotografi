@@ -17,7 +17,7 @@ set_query_var('is_model_category', $is_model_category);
 
 <section class="category">
     <div id="page">
-        <div class="wrapper">
+        <div class="wrapper" id="wrapper">
             <?php get_template_part('portfolio-menu'); ?>
 
             <h1 class="category-name"><?php echo $current_category->name ?></h1>
@@ -33,7 +33,7 @@ set_query_var('is_model_category', $is_model_category);
                 else :
                     while (have_posts()) :
                         the_post();
-                        get_template_part('content');
+                        get_template_part('content', get_post_format());
                     endwhile;
                 endif;
 
