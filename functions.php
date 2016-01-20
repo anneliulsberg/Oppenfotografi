@@ -143,15 +143,22 @@ function oppen_image_send_to_editor($html, $id, $caption, $title, $align, $url) 
     return $html;
 }
 
-function oppen_set_index_category_to_blog($query) {
+function oppen_pre_get_posts($query) {
+    // If we're on the front page, fetch the 3 latest blog posts
     if ($query->is_home() && $query->is_main_query()) {
         $query->set('is_category_blog', true);
         $query->set('category_name', 'blogg');
         $query->set('showposts', 3);
+        return;
+    }
+
+    // If we're on the blog category page, increase the post limit to 90 posts
+    if (!$query->is_home() && $query->is_category('blogg')) {
+        $query->set('showposts', 90);
     }
 }
 
-add_action('pre_get_posts', 'oppen_set_index_category_to_blog');
+add_action('pre_get_posts', 'oppen_pre_get_posts');
 add_action('after_setup_theme', 'oppen_setup');
 add_filter('body_class', 'oppen_body_class', 10, 2);
 add_filter('nav_menu_item_id', 'oppen_nav_menu_item_id', 10, 2);
