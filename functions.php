@@ -13,6 +13,7 @@ function oppen_setup() {
         'footer' => 'footer',
         'wrapper' => false,
         'posts_per_page' => 9
+        // TODO: add 'render' method or otherwise change the content-{xyz}.php that is loaded by infinite scroll so we can enable IS on other categories than 'blogg'.
     ));
 
     add_theme_support('post-thumbnails');
@@ -153,6 +154,11 @@ function oppen_image_send_to_editor($html, $id, $caption, $title, $align, $url) 
 }
 
 function oppen_pre_get_posts($query) {
+    // If we're on the infinite scroll AJAX callback, don't modify the query.
+    /*if ($_GET['infinity'] === 'scrolling' && !$query->is_category('blogg')) {
+        return;
+    }*/
+
     // If we're in the admin, don't modify the query
     if (is_admin()) {
         return;
@@ -179,6 +185,10 @@ function oppen_pre_get_posts($query) {
     }
 }
 
+/*function oppen_infinite_scroll_query_args($query) {
+    return $query;
+}*/
+
 function oppen_filter_infinite_scroll_archive_supported($supported, $self) {
     // Only support infinite scroll on the blog category.
     return is_category('blogg');
@@ -186,6 +196,8 @@ function oppen_filter_infinite_scroll_archive_supported($supported, $self) {
 
 add_action('pre_get_posts', 'oppen_pre_get_posts');
 add_action('after_setup_theme', 'oppen_setup');
+
+// add_filter('infinite_scroll_query_args', 'oppen_infinite_scroll_query_args');
 
 add_filter('infinite_scroll_archive_supported', 'oppen_filter_infinite_scroll_archive_supported', 10, 2);
 add_filter('body_class', 'oppen_body_class', 10, 2);
