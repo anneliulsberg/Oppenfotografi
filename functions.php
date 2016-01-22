@@ -179,8 +179,15 @@ function oppen_pre_get_posts($query) {
     }
 }
 
+function oppen_filter_infinite_scroll_archive_supported($supported, $self) {
+    // Only support infinite scroll on the blog category.
+    return is_category('blogg');
+}
+
 add_action('pre_get_posts', 'oppen_pre_get_posts');
 add_action('after_setup_theme', 'oppen_setup');
+
+add_filter('infinite_scroll_archive_supported', 'oppen_filter_infinite_scroll_archive_supported', 10, 2);
 add_filter('body_class', 'oppen_body_class', 10, 2);
 add_filter('nav_menu_item_id', 'oppen_nav_menu_item_id', 10, 2);
 add_filter('nav_menu_css_class' , 'oppen_nav_menu_item_css_class', 10, 2);
