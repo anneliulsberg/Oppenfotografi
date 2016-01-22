@@ -12,7 +12,7 @@ function oppen_setup() {
         'container' => 'wrapper',
         'footer' => 'footer',
         'wrapper' => false,
-        'posts_per_page' => 9,
+        'posts_per_page' => 9
     ));
 
     add_theme_support('post-thumbnails');
@@ -153,6 +153,11 @@ function oppen_image_send_to_editor($html, $id, $caption, $title, $align, $url) 
 }
 
 function oppen_pre_get_posts($query) {
+    // If we're in the admin, don't modify the query
+    if (is_admin()) {
+        return;
+    }
+
     // If we're on the front page, fetch the 3 latest blog posts
     if ($query->is_home() && $query->is_main_query()) {
         $query->set('is_category_blog', true);
