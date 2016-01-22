@@ -366,6 +366,30 @@ body.home article a span {
 	display: block;
 }
 
+body.kundeportefolje article:nth-of-type(4n+1) a span,
+body.blogg article:nth-of-type(4n+1) a span,
+body.home article:nth-of-type(4n+1) a span {
+	background-color: #b4b4b4;
+}
+
+body.kundeportefolje article:nth-of-type(4n+2) a span,
+body.blogg article:nth-of-type(4n+2) a span,
+body.home article:nth-of-type(4n+2) a span {
+	background-color: #cacaca;
+}
+
+body.kundeportefolje article:nth-of-type(4n+3) a span,
+body.blogg article:nth-of-type(4n+3) a span,
+body.home article:nth-of-type(4n+3) a span {
+	background-color: #bdbdbd;
+}
+
+body.kundeportefolje article:nth-of-type(4n+4) a span,
+body.blogg article:nth-of-type(4n+4) a span,
+body.home article:nth-of-type(4n+4) a span {
+	background-color: #d3d3d3;
+}
+
 body.kunstfotografi.portefolje #media > li > a:hover,
 body.portrett.portefolje #media > li > a:hover,
 body.bryllup.portefolje #media > li > a:hover,
