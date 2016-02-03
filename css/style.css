@@ -327,12 +327,7 @@ body.home article {
 	float: left;	
 }
 
-body.kunstfotografi.portefolje #media > li > a,
-body.portrett.portefolje #media > li > a,
-body.bryllup.portefolje #media > li > a,
-body.stemning.portefolje #media > li > a,
-body.bransje.portefolje #media > li > a,
-body.akt.portefolje #media > li > a,
+#media > li > a,
 body.kundeportefolje article h2 a,
 body.blogg article h1 a,
 body.home article h1 a {
@@ -390,12 +385,7 @@ body.home article:nth-of-type(4n+4) a span {
 	background-color: #d3d3d3;
 }
 
-body.kunstfotografi.portefolje #media > li > a:hover,
-body.portrett.portefolje #media > li > a:hover,
-body.bryllup.portefolje #media > li > a:hover,
-body.stemning.portefolje #media > li > a:hover,
-body.bransje.portefolje #media > li > a:hover,
-body.akt.portefolje #media > li > a:hover,
+#media > li > a:hover,
 body.kundeportefolje article a:hover,
 body.blogg article a:hover,
 body.home article a:hover {
