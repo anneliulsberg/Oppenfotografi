@@ -342,6 +342,15 @@ body.home article h1 a {
 	background-position: 0px 0px;
 }
 
+body.single article p a {
+	transition: all 0.3s;
+	color: #9eb4b7;
+}
+
+body.single article p a:hover {
+	color: #b7b7b7;
+}
+
 body.kunstfotografi.portefolje #media li a span,
 body.portrett.portefolje #media li a span,
 body.bryllup.portefolje #media li a span,
