@@ -333,9 +333,9 @@ body.bryllup.portefolje #media > li > a,
 body.stemning.portefolje #media > li > a,
 body.bransje.portefolje #media > li > a,
 body.akt.portefolje #media > li > a,
-body.kundeportefolje article a,
-body.blogg article a,
-body.home article a {
+body.kundeportefolje article h2 a,
+body.blogg article h1 a,
+body.home article h1 a {
 	width: 400px;
 	height: 400px;
 	display: inline-block;
@@ -430,12 +430,6 @@ body.blogg.single article {
 	float: none;
 }
 
-body.kundeportefolje.single article a,
-body.blogg.single article a {
-	height: 100%;
-	width: 1200px;
-	color: #fff;
-	text-align: left;
 body.blogg.single #metadata {
 	margin-bottom: 20px;
 }
