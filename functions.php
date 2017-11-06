@@ -30,7 +30,7 @@ function oppen_setup() {
 }
 
 function oppen_nav_menu_item_css_class($classes, $item) {
-    if (in_array('current-menu-item', $classes) ){
+    if (in_array('current-menu-item', $classes)) {
         return array('active');
     }
 
@@ -47,17 +47,17 @@ function oppen_nav_menu_item_css_class($classes, $item) {
     return array();
 }
 
-function oppen_nav_menu_item_id($menu_id, $item, $args, $depth) {
+function oppen_nav_menu_item_id($menu_id, $item) {
     if ($item) {
-        switch ($item->object) {
-            case "page":
-                $post = get_post($item->object_id);
-                return $post->post_name;
-            case "category":
-                $category = get_category($item->object_id);
-                return $category->slug;
-        }
-    }
+         switch ($item->object) {
+             case "page":
+                 $post = get_post($item->object_id);
+                 return $post->post_name;
+             case "category":
+                 $category = get_category($item->object_id);
+                 return $category->slug;
+         }
+     }
 
     return $menu_id;
 }

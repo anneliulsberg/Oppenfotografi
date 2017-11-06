@@ -37,7 +37,8 @@ $categories = get_categories(array(
                                 limit 			2
                             ";
 
-                            $images = $wpdb->get_results($wpdb->prepare($query));
+                            $prepared = $wpdb->prepare($query, null);
+                            $images = $wpdb->get_results($prepared);
 
                             foreach ($images as $image) :
                                 $title = apply_filters('the_title', $image->post_title);
