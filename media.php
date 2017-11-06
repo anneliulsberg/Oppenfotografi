@@ -31,7 +31,7 @@ else : ?>
 
 endif;
 
-function oppen_list_images($images) {
+function oppen_list_images($images = NULL) {
     if ($images === NULL) {
         $images = array_values(get_attached_media('image'));
     }
